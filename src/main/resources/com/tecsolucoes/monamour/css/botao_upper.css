@@ -1,0 +1,7 @@
+.upper_button {
+    -fx-background-color: #E291A2;
+}
+.upper_button:pressed{
+    -fx-border-width: 0px 0px 0px 2px;
+    -fx-border-color: #F6D4DB;
+}

@@ -1,0 +1,6 @@
+.view_all {
+    -fx-background-color: #F6D4DB;
+}
+.view_all:pressed{
+    -fx-background-color: #E291A2;
+}
