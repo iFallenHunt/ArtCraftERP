@@ -304,7 +304,7 @@
                                                                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                                                                     </padding>
                                                                 </Label>
-                                                                <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" text="Novo produto" textFill="WHITE">
+                                                                <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" text="Novos Produto +" textFill="WHITE">
                                                                     <font>
                                                                         <Font name="Calibri Bold" size="18.0" />
                                                                     </font>
@@ -807,10 +807,44 @@
                                                     </padding>
                                                 </HBox>
                                             </children>
-                                            <padding>
-                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                            </padding>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
                                         </HBox>
+                              <VBox alignment="CENTER" prefHeight="287.0" prefWidth="206.0">
+                                 <children>
+                                    <VBox prefHeight="342.0" prefWidth="186.0">
+                                       <children>
+                                          <ImageView fitHeight="191.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Imagens/marca.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 0px 0px 10px 10px;" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="287.0" prefWidth="206.0">
+                                 <children>
+                                    <VBox prefHeight="342.0" prefWidth="186.0">
+                                       <children>
+                                          <ImageView fitHeight="191.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@Imagens/marca.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 0px 0px 10px 10px;" />
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </VBox>
                                     </children>
                                 </VBox>
                             </children>
