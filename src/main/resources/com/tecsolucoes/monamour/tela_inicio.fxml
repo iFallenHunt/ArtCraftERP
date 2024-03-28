@@ -16,6 +16,7 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
+
 <AnchorPane style="-fx-background-color: #FFF0DC;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <VBox prefHeight="720.0" prefWidth="200.0">
@@ -30,22 +31,22 @@
                                     </image>
                                 </ImageView>
                             </graphic>
-                     <effect>
-                        <DropShadow height="5.0" radius="2.0" width="5.0" />
-                     </effect>
-                     <stylesheets>
-                        <URL value="@css/MainView.css" />
-                        <URL value="@css/botao_upper.css" />
-                        <URL value="@css/hand.css" />
-                        <URL value="@css/vier_all.css" />
-                        <URL value="@css/efeito_pressed.css" />
-                        <URL value="@css/efeito_hover.css" />
-                     </stylesheets>
-                     <styleClass>
-                        <String fx:value="upper_button" />
-                        <String fx:value="button" />
-                        <String fx:value="view_all" />
-                     </styleClass>
+                            <effect>
+                                <DropShadow height="5.0" radius="2.0" width="5.0" />
+                            </effect>
+                            <stylesheets>
+                                <URL value="@css/MainView.css" />
+                                <URL value="@css/botao_upper.css" />
+                                <URL value="@css/hand.css" />
+                                <URL value="@css/vier_all.css" />
+                                <URL value="@css/efeito_pressed.css" />
+                                <URL value="@css/efeito_hover.css" />
+                            </stylesheets>
+                            <styleClass>
+                                <String fx:value="upper_button" />
+                                <String fx:value="button" />
+                                <String fx:value="view_all" />
+                            </styleClass>
                         </Button>
                     </children>
                 </VBox>
@@ -60,14 +61,14 @@
                     <VBox.margin>
                         <Insets top="5.0" />
                     </VBox.margin>
-               <stylesheets>
-                  <URL value="@css/hand.css" />
-                  <URL value="@css/botao_menu.css" />
-               </stylesheets>
-               <styleClass>
-                  <String fx:value="botao_menu" />
-                  <String fx:value="cursor_hand" />
-               </styleClass>
+                    <stylesheets>
+                        <URL value="@css/hand.css" />
+                        <URL value="@css/botao_menu.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="botao_menu" />
+                        <String fx:value="cursor_hand" />
+                    </styleClass>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
                     <children>
@@ -80,14 +81,14 @@
                     <VBox.margin>
                         <Insets top="5.0" />
                     </VBox.margin>
-               <stylesheets>
-                  <URL value="@css/hand.css" />
-                  <URL value="@css/botao_menu.css" />
-               </stylesheets>
-               <styleClass>
-                  <String fx:value="botao_menu" />
-                  <String fx:value="cursor_hand" />
-               </styleClass>
+                    <stylesheets>
+                        <URL value="@css/hand.css" />
+                        <URL value="@css/botao_menu.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="botao_menu" />
+                        <String fx:value="cursor_hand" />
+                    </styleClass>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
                     <children>
@@ -100,14 +101,14 @@
                     <VBox.margin>
                         <Insets top="5.0" />
                     </VBox.margin>
-               <stylesheets>
-                  <URL value="@css/hand.css" />
-                  <URL value="@css/botao_menu.css" />
-               </stylesheets>
-               <styleClass>
-                  <String fx:value="botao_menu" />
-                  <String fx:value="cursor_hand" />
-               </styleClass>
+                    <stylesheets>
+                        <URL value="@css/hand.css" />
+                        <URL value="@css/botao_menu.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="botao_menu" />
+                        <String fx:value="cursor_hand" />
+                    </styleClass>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
                     <children>
@@ -120,14 +121,14 @@
                     <VBox.margin>
                         <Insets top="5.0" />
                     </VBox.margin>
-               <stylesheets>
-                  <URL value="@css/hand.css" />
-                  <URL value="@css/botao_menu.css" />
-               </stylesheets>
-               <styleClass>
-                  <String fx:value="botao_menu" />
-                  <String fx:value="cursor_hand" />
-               </styleClass>
+                    <stylesheets>
+                        <URL value="@css/hand.css" />
+                        <URL value="@css/botao_menu.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="botao_menu" />
+                        <String fx:value="cursor_hand" />
+                    </styleClass>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
                     <children>
@@ -140,14 +141,14 @@
                     <VBox.margin>
                         <Insets top="5.0" />
                     </VBox.margin>
-               <stylesheets>
-                  <URL value="@css/hand.css" />
-                  <URL value="@css/botao_menu.css" />
-               </stylesheets>
-               <styleClass>
-                  <String fx:value="botao_menu" />
-                  <String fx:value="cursor_hand" />
-               </styleClass>
+                    <stylesheets>
+                        <URL value="@css/hand.css" />
+                        <URL value="@css/botao_menu.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="botao_menu" />
+                        <String fx:value="cursor_hand" />
+                    </styleClass>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
                     <children>
@@ -160,14 +161,14 @@
                     <VBox.margin>
                         <Insets top="5.0" />
                     </VBox.margin>
-               <stylesheets>
-                  <URL value="@css/hand.css" />
-                  <URL value="@css/botao_menu.css" />
-               </stylesheets>
-               <styleClass>
-                  <String fx:value="botao_menu" />
-                  <String fx:value="cursor_hand" />
-               </styleClass>
+                    <stylesheets>
+                        <URL value="@css/hand.css" />
+                        <URL value="@css/botao_menu.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="botao_menu" />
+                        <String fx:value="cursor_hand" />
+                    </styleClass>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
                     <children>
@@ -180,14 +181,14 @@
                     <VBox.margin>
                         <Insets top="5.0" />
                     </VBox.margin>
-               <stylesheets>
-                  <URL value="@css/hand.css" />
-                  <URL value="@css/botao_menu.css" />
-               </stylesheets>
-               <styleClass>
-                  <String fx:value="botao_menu" />
-                  <String fx:value="cursor_hand" />
-               </styleClass>
+                    <stylesheets>
+                        <URL value="@css/hand.css" />
+                        <URL value="@css/botao_menu.css" />
+                    </stylesheets>
+                    <styleClass>
+                        <String fx:value="botao_menu" />
+                        <String fx:value="cursor_hand" />
+                    </styleClass>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="117.0" prefWidth="200.0">
                     <children>
@@ -198,19 +199,19 @@
                             <styleClass>
                                 <String fx:value="view_all" />
                                 <String fx:value="button" />
-                        <String fx:value="upper_button" />
+                                <String fx:value="upper_button" />
                             </styleClass>
-                     <effect>
-                        <DropShadow height="5.0" radius="2.0" width="5.0" />
-                     </effect>
-                     <stylesheets>
-                        <URL value="@css/botao_upper.css" />
-                        <URL value="@css/efeito_hover.css" />
-                        <URL value="@css/efeito_pressed.css" />
-                        <URL value="@css/hand.css" />
-                        <URL value="@css/MainView.css" />
-                        <URL value="@css/vier_all.css" />
-                     </stylesheets>
+                            <effect>
+                                <DropShadow height="5.0" radius="2.0" width="5.0" />
+                            </effect>
+                            <stylesheets>
+                                <URL value="@css/botao_upper.css" />
+                                <URL value="@css/efeito_hover.css" />
+                                <URL value="@css/efeito_pressed.css" />
+                                <URL value="@css/hand.css" />
+                                <URL value="@css/MainView.css" />
+                                <URL value="@css/vier_all.css" />
+                            </stylesheets>
                         </Button>
                     </children>
                 </HBox>
@@ -228,13 +229,13 @@
                                             <HBox.margin>
                                                 <Insets left="15.0" />
                                             </HBox.margin>
-                                 <effect>
-                                    <DropShadow blurType="ONE_PASS_BOX" height="3.0" radius="1.0" width="3.0">
-                                       <color>
-                                          <Color red="0.7105262875556946" green="0.49671053886413574" blue="0.49671053886413574" />
-                                       </color>
-                                    </DropShadow>
-                                 </effect>
+                                            <effect>
+                                                <DropShadow blurType="ONE_PASS_BOX" height="3.0" radius="1.0" width="3.0">
+                                                    <color>
+                                                        <Color red="0.7105262875556946" green="0.49671053886413574" blue="0.49671053886413574" />
+                                                    </color>
+                                                </DropShadow>
+                                            </effect>
                                         </TextField>
                                     </children>
                                 </HBox>
@@ -251,21 +252,21 @@
                                                     </image>
                                                 </ImageView>
                                             </children>
-                                 <effect>
-                                    <DropShadow height="5.0" radius="2.0" width="5.0" />
-                                 </effect>
-                                 <stylesheets>
-                                    <URL value="@css/botao_upper.css" />
-                                    <URL value="@css/efeito_hover.css" />
-                                    <URL value="@css/efeito_pressed.css" />
-                                    <URL value="@css/hand.css" />
-                                    <URL value="@css/MainView.css" />
-                                    <URL value="@css/vier_all.css" />
-                                 </stylesheets>
-                                 <styleClass>
-                                    <String fx:value="button" />
-                                    <String fx:value="upper_button" />
-                                 </styleClass>
+                                            <effect>
+                                                <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                            </effect>
+                                            <stylesheets>
+                                                <URL value="@css/botao_upper.css" />
+                                                <URL value="@css/efeito_hover.css" />
+                                                <URL value="@css/efeito_pressed.css" />
+                                                <URL value="@css/hand.css" />
+                                                <URL value="@css/MainView.css" />
+                                                <URL value="@css/vier_all.css" />
+                                            </stylesheets>
+                                            <styleClass>
+                                                <String fx:value="button" />
+                                                <String fx:value="upper_button" />
+                                            </styleClass>
                                         </HBox>
                                         <HBox alignment="CENTER" prefHeight="77.0" prefWidth="89.0" style="-fx-background-radius: 20; -fx-border-radius: 20;">
                                             <HBox.margin>
@@ -278,21 +279,21 @@
                                                     </image>
                                                 </ImageView>
                                             </children>
-                                 <effect>
-                                    <DropShadow height="5.0" radius="2.0" width="5.0" />
-                                 </effect>
-                                 <stylesheets>
-                                    <URL value="@css/botao_upper.css" />
-                                    <URL value="@css/efeito_hover.css" />
-                                    <URL value="@css/efeito_pressed.css" />
-                                    <URL value="@css/hand.css" />
-                                    <URL value="@css/MainView.css" />
-                                    <URL value="@css/vier_all.css" />
-                                 </stylesheets>
-                                 <styleClass>
-                                    <String fx:value="button" />
-                                    <String fx:value="upper_button" />
-                                 </styleClass>
+                                            <effect>
+                                                <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                            </effect>
+                                            <stylesheets>
+                                                <URL value="@css/botao_upper.css" />
+                                                <URL value="@css/efeito_hover.css" />
+                                                <URL value="@css/efeito_pressed.css" />
+                                                <URL value="@css/hand.css" />
+                                                <URL value="@css/MainView.css" />
+                                                <URL value="@css/vier_all.css" />
+                                            </stylesheets>
+                                            <styleClass>
+                                                <String fx:value="button" />
+                                                <String fx:value="upper_button" />
+                                            </styleClass>
                                         </HBox>
                                     </children>
                                     <padding>
@@ -342,25 +343,25 @@
                                                                     <VBox.margin>
                                                                         <Insets bottom="-5.0" top="10.0" />
                                                                     </VBox.margin>
-                                                   <effect>
-                                                      <DropShadow height="4.0" radius="1.5" width="4.0">
-                                                         <color>
-                                                            <Color red="1.0" green="1.0" blue="1.0" />
-                                                         </color>
-                                                      </DropShadow>
-                                                   </effect>
-                                                   <stylesheets>
-                                                      <URL value="@css/vier_all.css" />
-                                                      <URL value="@css/MainView.css" />
-                                                      <URL value="@css/hand.css" />
-                                                      <URL value="@css/efeito_pressed.css" />
-                                                      <URL value="@css/efeito_hover.css" />
-                                                      <URL value="@css/botao_upper.css" />
-                                                   </stylesheets>
-                                                   <styleClass>
-                                                      <String fx:value="cursor_hand" />
-                                                      <String fx:value="upper_button" />
-                                                   </styleClass>
+                                                                    <effect>
+                                                                        <DropShadow height="4.0" radius="1.5" width="4.0">
+                                                                            <color>
+                                                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                                                            </color>
+                                                                        </DropShadow>
+                                                                    </effect>
+                                                                    <stylesheets>
+                                                                        <URL value="@css/vier_all.css" />
+                                                                        <URL value="@css/MainView.css" />
+                                                                        <URL value="@css/hand.css" />
+                                                                        <URL value="@css/efeito_pressed.css" />
+                                                                        <URL value="@css/efeito_hover.css" />
+                                                                        <URL value="@css/botao_upper.css" />
+                                                                    </stylesheets>
+                                                                    <styleClass>
+                                                                        <String fx:value="cursor_hand" />
+                                                                        <String fx:value="upper_button" />
+                                                                    </styleClass>
                                                                 </Button>
                                                             </children>
                                                             <padding>
@@ -393,21 +394,21 @@
                                                                             </color>
                                                                         </DropShadow>
                                                                     </effect>
-                                                   <children>
-                                                      <Label alignment="CENTER" prefHeight="37.0" prefWidth="64.0" text="Custos">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="18.0" />
-                                                         </font>
-                                                         <padding>
-                                                            <Insets top="10.0" />
-                                                         </padding>
-                                                      </Label>
-                                                      <Label text="R$ 300,00">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
+                                                                    <children>
+                                                                        <Label alignment="CENTER" prefHeight="37.0" prefWidth="64.0" text="Custos">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="18.0" />
+                                                                            </font>
+                                                                            <padding>
+                                                                                <Insets top="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <Label text="R$ 300,00">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="18.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
                                                                 </VBox>
                                                                 <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="95.0" style="-fx-background-color: f9f9f9; -fx-background-radius: 15;">
                                                                     <HBox.margin>
@@ -420,21 +421,21 @@
                                                                             </color>
                                                                         </DropShadow>
                                                                     </effect>
-                                                   <children>
-                                                      <Label alignment="CENTER" prefHeight="37.0" prefWidth="64.0" text="Lucro">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="18.0" />
-                                                         </font>
-                                                         <padding>
-                                                            <Insets top="10.0" />
-                                                         </padding>
-                                                      </Label>
-                                                      <Label text="R$ 300,00">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
+                                                                    <children>
+                                                                        <Label alignment="CENTER" prefHeight="37.0" prefWidth="64.0" text="Lucro">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="18.0" />
+                                                                            </font>
+                                                                            <padding>
+                                                                                <Insets top="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <Label text="R$ 300,00">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="18.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
                                                                 </VBox>
                                                                 <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="95.0" style="-fx-background-color: f9f9f9; -fx-background-radius: 15;">
                                                                     <HBox.margin>
@@ -447,21 +448,21 @@
                                                                             </color>
                                                                         </DropShadow>
                                                                     </effect>
-                                                   <children>
-                                                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="64.0" text="Liquido">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="18.0" />
-                                                         </font>
-                                                         <padding>
-                                                            <Insets top="10.0" />
-                                                         </padding>
-                                                      </Label>
-                                                      <Label text="R$ 300,00">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
+                                                                    <children>
+                                                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="64.0" text="Liquido">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="18.0" />
+                                                                            </font>
+                                                                            <padding>
+                                                                                <Insets top="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <Label text="R$ 300,00">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="18.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
                                                                 </VBox>
                                                                 <VBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="95.0" style="-fx-background-color: f9f9f9; -fx-background-radius: 15;">
                                                                     <HBox.margin>
@@ -474,21 +475,21 @@
                                                                             </color>
                                                                         </DropShadow>
                                                                     </effect>
-                                                   <children>
-                                                      <Label alignment="CENTER" prefHeight="37.0" prefWidth="64.0" text="Total">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="18.0" />
-                                                         </font>
-                                                         <padding>
-                                                            <Insets top="10.0" />
-                                                         </padding>
-                                                      </Label>
-                                                      <Label text="R$ 300,00">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="18.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
+                                                                    <children>
+                                                                        <Label alignment="CENTER" prefHeight="37.0" prefWidth="64.0" text="Total">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="18.0" />
+                                                                            </font>
+                                                                            <padding>
+                                                                                <Insets top="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <Label text="R$ 300,00">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="18.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
                                                                 </VBox>
                                                             </children>
                                                             <VBox.margin>
@@ -523,146 +524,146 @@
                                                                                 <String fx:value="view_all" />
                                                                                 <String fx:value="upper_button" />
                                                                             </styleClass>
-                                                         <effect>
-                                                            <DropShadow height="5.0" radius="2.0" width="5.0" />
-                                                         </effect>
-                                                         <stylesheets>
-                                                            <URL value="@css/botao_upper.css" />
-                                                            <URL value="@css/efeito_hover.css" />
-                                                            <URL value="@css/efeito_pressed.css" />
-                                                            <URL value="@css/hand.css" />
-                                                            <URL value="@css/MainView.css" />
-                                                            <URL value="@css/vier_all.css" />
-                                                         </stylesheets>
+                                                                            <effect>
+                                                                                <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                                                            </effect>
+                                                                            <stylesheets>
+                                                                                <URL value="@css/botao_upper.css" />
+                                                                                <URL value="@css/efeito_hover.css" />
+                                                                                <URL value="@css/efeito_pressed.css" />
+                                                                                <URL value="@css/hand.css" />
+                                                                                <URL value="@css/MainView.css" />
+                                                                                <URL value="@css/vier_all.css" />
+                                                                            </stylesheets>
                                                                         </Button>
                                                                     </children>
                                                                     <padding>
                                                                         <Insets left="10.0" />
                                                                     </padding>
                                                                 </HBox>
-                                                <Separator prefWidth="150.0" />
-                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
-                                                   <children>
-                                                      <Button alignment="CENTER" mnemonicParsing="false" prefHeight="63.0" prefWidth="70.0" style="-fx-border-radius: 15; -fx-background-radius: 15;" styleClass="botao_financeiro" stylesheets="@css/botao_financeiro.css">
-                                                         <graphic>
-                                                            <ImageView fitHeight="53.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@Imagens/grafico-de-barras.png" />
-                                                               </image>
-                                                            </ImageView>
-                                                         </graphic>
-                                                         <effect>
-                                                            <DropShadow height="5.0" radius="2.0" width="5.0">
-                                                               <color>
-                                                                  <Color red="0.843137264251709" green="0.6666666865348816" blue="0.6666666865348816" />
-                                                               </color>
-                                                            </DropShadow>
-                                                         </effect>
-                                                      </Button>
-                                                      <Label prefHeight="28.0" prefWidth="88.0" text="Teste 2">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                         <padding>
-                                                            <Insets left="10.0" />
-                                                         </padding>
-                                                      </Label>
-                                                      <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="216.0">
-                                                         <children>
-                                                            <Label alignment="CENTER" contentDisplay="CENTER" text="Teste 3">
-                                                               <font>
-                                                                  <Font name="Calibri Bold" size="24.0" />
-                                                               </font>
-                                                            </Label>
-                                                         </children>
-                                                      </HBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                                   </padding>
-                                                </HBox>
-                                                <Separator prefWidth="150.0" />
-                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
-                                                   <children>
-                                                      <Button alignment="CENTER" mnemonicParsing="false" prefHeight="63.0" prefWidth="70.0" style="-fx-border-radius: 15; -fx-background-radius: 15;" styleClass="botao_financeiro" stylesheets="@css/botao_financeiro.css">
-                                                         <graphic>
-                                                            <ImageView fitHeight="53.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@Imagens/grafico-de-pizza.png" />
-                                                               </image>
-                                                            </ImageView>
-                                                         </graphic>
-                                                         <effect>
-                                                            <DropShadow height="5.0" radius="2.0" width="5.0">
-                                                               <color>
-                                                                  <Color red="0.843137264251709" green="0.6666666865348816" blue="0.6666666865348816" />
-                                                               </color>
-                                                            </DropShadow>
-                                                         </effect>
-                                                      </Button>
-                                                      <Label prefHeight="28.0" prefWidth="88.0" text="Teste 4">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                         <padding>
-                                                            <Insets left="10.0" />
-                                                         </padding>
-                                                      </Label>
-                                                      <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="216.0">
-                                                         <children>
-                                                            <Label alignment="CENTER" contentDisplay="CENTER" text="Teste 5">
-                                                               <font>
-                                                                  <Font name="Calibri Bold" size="24.0" />
-                                                               </font>
-                                                            </Label>
-                                                         </children>
-                                                      </HBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                                   </padding>
-                                                </HBox>
-                                                <Separator prefWidth="150.0" />
-                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
-                                                   <children>
-                                                      <Button alignment="CENTER" mnemonicParsing="false" prefHeight="63.0" prefWidth="70.0" style="-fx-border-radius: 15; -fx-background-radius: 15;" styleClass="botao_financeiro" stylesheets="@css/botao_financeiro.css">
-                                                         <graphic>
-                                                            <ImageView fitHeight="53.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
-                                                               <image>
-                                                                  <Image url="@Imagens/grafico-preditivo.png" />
-                                                               </image>
-                                                            </ImageView>
-                                                         </graphic>
-                                                         <effect>
-                                                            <DropShadow height="5.0" radius="2.0" width="5.0">
-                                                               <color>
-                                                                  <Color red="0.843137264251709" green="0.6666666865348816" blue="0.6666666865348816" />
-                                                               </color>
-                                                            </DropShadow>
-                                                         </effect>
-                                                      </Button>
-                                                      <Label prefHeight="28.0" prefWidth="88.0" text="Teste 6">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                         <padding>
-                                                            <Insets left="10.0" />
-                                                         </padding>
-                                                      </Label>
-                                                      <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="216.0">
-                                                         <children>
-                                                            <Label alignment="CENTER" contentDisplay="CENTER" text="Teste 7">
-                                                               <font>
-                                                                  <Font name="Calibri Bold" size="24.0" />
-                                                               </font>
-                                                            </Label>
-                                                         </children>
-                                                      </HBox>
-                                                   </children>
-                                                   <padding>
-                                                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                                   </padding>
-                                                </HBox>
+                                                                <Separator prefWidth="150.0" />
+                                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                                    <children>
+                                                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="63.0" prefWidth="70.0" style="-fx-border-radius: 15; -fx-background-radius: 15;" styleClass="botao_financeiro" stylesheets="@css/botao_financeiro.css">
+                                                                            <graphic>
+                                                                                <ImageView fitHeight="53.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                                                                    <image>
+                                                                                        <Image url="@Imagens/grafico-de-barras.png" />
+                                                                                    </image>
+                                                                                </ImageView>
+                                                                            </graphic>
+                                                                            <effect>
+                                                                                <DropShadow height="5.0" radius="2.0" width="5.0">
+                                                                                    <color>
+                                                                                        <Color red="0.843137264251709" green="0.6666666865348816" blue="0.6666666865348816" />
+                                                                                    </color>
+                                                                                </DropShadow>
+                                                                            </effect>
+                                                                        </Button>
+                                                                        <Label prefHeight="28.0" prefWidth="88.0" text="Teste 2">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="216.0">
+                                                                            <children>
+                                                                                <Label alignment="CENTER" contentDisplay="CENTER" text="Teste 3">
+                                                                                    <font>
+                                                                                        <Font name="Calibri Bold" size="24.0" />
+                                                                                    </font>
+                                                                                </Label>
+                                                                            </children>
+                                                                        </HBox>
+                                                                    </children>
+                                                                    <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                    </padding>
+                                                                </HBox>
+                                                                <Separator prefWidth="150.0" />
+                                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                                    <children>
+                                                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="63.0" prefWidth="70.0" style="-fx-border-radius: 15; -fx-background-radius: 15;" styleClass="botao_financeiro" stylesheets="@css/botao_financeiro.css">
+                                                                            <graphic>
+                                                                                <ImageView fitHeight="53.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                                                                    <image>
+                                                                                        <Image url="@Imagens/grafico-de-pizza.png" />
+                                                                                    </image>
+                                                                                </ImageView>
+                                                                            </graphic>
+                                                                            <effect>
+                                                                                <DropShadow height="5.0" radius="2.0" width="5.0">
+                                                                                    <color>
+                                                                                        <Color red="0.843137264251709" green="0.6666666865348816" blue="0.6666666865348816" />
+                                                                                    </color>
+                                                                                </DropShadow>
+                                                                            </effect>
+                                                                        </Button>
+                                                                        <Label prefHeight="28.0" prefWidth="88.0" text="Teste 4">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="216.0">
+                                                                            <children>
+                                                                                <Label alignment="CENTER" contentDisplay="CENTER" text="Teste 5">
+                                                                                    <font>
+                                                                                        <Font name="Calibri Bold" size="24.0" />
+                                                                                    </font>
+                                                                                </Label>
+                                                                            </children>
+                                                                        </HBox>
+                                                                    </children>
+                                                                    <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                    </padding>
+                                                                </HBox>
+                                                                <Separator prefWidth="150.0" />
+                                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                                    <children>
+                                                                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="63.0" prefWidth="70.0" style="-fx-border-radius: 15; -fx-background-radius: 15;" styleClass="botao_financeiro" stylesheets="@css/botao_financeiro.css">
+                                                                            <graphic>
+                                                                                <ImageView fitHeight="53.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                                                                    <image>
+                                                                                        <Image url="@Imagens/grafico-preditivo.png" />
+                                                                                    </image>
+                                                                                </ImageView>
+                                                                            </graphic>
+                                                                            <effect>
+                                                                                <DropShadow height="5.0" radius="2.0" width="5.0">
+                                                                                    <color>
+                                                                                        <Color red="0.843137264251709" green="0.6666666865348816" blue="0.6666666865348816" />
+                                                                                    </color>
+                                                                                </DropShadow>
+                                                                            </effect>
+                                                                        </Button>
+                                                                        <Label prefHeight="28.0" prefWidth="88.0" text="Teste 6">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                            <padding>
+                                                                                <Insets left="10.0" />
+                                                                            </padding>
+                                                                        </Label>
+                                                                        <HBox alignment="CENTER_RIGHT" prefHeight="63.0" prefWidth="216.0">
+                                                                            <children>
+                                                                                <Label alignment="CENTER" contentDisplay="CENTER" text="Teste 7">
+                                                                                    <font>
+                                                                                        <Font name="Calibri Bold" size="24.0" />
+                                                                                    </font>
+                                                                                </Label>
+                                                                            </children>
+                                                                        </HBox>
+                                                                    </children>
+                                                                    <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                    </padding>
+                                                                </HBox>
                                                             </children>
                                                         </VBox>
                                                     </children>
@@ -695,106 +696,106 @@
                                                                         <String fx:value="view_all" />
                                                                         <String fx:value="upper_button" />
                                                                     </styleClass>
-                                                   <effect>
-                                                      <DropShadow height="5.0" radius="2.0" width="5.0" />
-                                                   </effect>
-                                                   <stylesheets>
-                                                      <URL value="@css/botao_upper.css" />
-                                                      <URL value="@css/efeito_hover.css" />
-                                                      <URL value="@css/efeito_pressed.css" />
-                                                      <URL value="@css/hand.css" />
-                                                      <URL value="@css/MainView.css" />
-                                                      <URL value="@css/vier_all.css" />
-                                                   </stylesheets>
+                                                                    <effect>
+                                                                        <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                                                    </effect>
+                                                                    <stylesheets>
+                                                                        <URL value="@css/botao_upper.css" />
+                                                                        <URL value="@css/efeito_hover.css" />
+                                                                        <URL value="@css/efeito_pressed.css" />
+                                                                        <URL value="@css/hand.css" />
+                                                                        <URL value="@css/MainView.css" />
+                                                                        <URL value="@css/vier_all.css" />
+                                                                    </stylesheets>
                                                                 </Button>
                                                             </children>
                                                             <padding>
                                                                 <Insets left="10.0" />
                                                             </padding>
                                                         </HBox>
-                                          <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
-                                             <children>
-                                                <HBox styleClass="cursor_hand" stylesheets="@css/hand.css">
-                                                   <children>
-                                                      <Label text="PAPEL 1">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                </HBox>
-                                             </children>
-                                          </VBox>
-                                          <Separator prefWidth="200.0" />
-                                          <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
-                                             <children>
-                                                <HBox>
-                                                   <children>
-                                                      <Label text="PAPEL 2">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                </HBox>
-                                             </children>
-                                          </VBox>
-                                          <Separator prefWidth="200.0" />
-                                          <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
-                                             <children>
-                                                <HBox>
-                                                   <children>
-                                                      <Label text="PAPEL 3">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                </HBox>
-                                             </children>
-                                          </VBox>
-                                          <Separator prefWidth="200.0" />
-                                          <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
-                                             <children>
-                                                <HBox>
-                                                   <children>
-                                                      <Label text="PAPEL 4">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                </HBox>
-                                             </children>
-                                          </VBox>
-                                          <Separator prefWidth="200.0" />
-                                          <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
-                                             <children>
-                                                <HBox>
-                                                   <children>
-                                                      <Label text="PAPEL 5">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                </HBox>
-                                             </children>
-                                          </VBox>
-                                          <Separator prefWidth="200.0" />
-                                          <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
-                                             <children>
-                                                <HBox>
-                                                   <children>
-                                                      <Label text="PAPEL 6">
-                                                         <font>
-                                                            <Font name="Calibri Bold" size="24.0" />
-                                                         </font>
-                                                      </Label>
-                                                   </children>
-                                                </HBox>
-                                             </children>
-                                          </VBox>
+                                                        <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0">
+                                                            <children>
+                                                                <HBox styleClass="cursor_hand" stylesheets="@css/hand.css">
+                                                                    <children>
+                                                                        <Label text="PAPEL 1">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </VBox>
+                                                        <Separator prefWidth="200.0" />
+                                                        <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
+                                                            <children>
+                                                                <HBox>
+                                                                    <children>
+                                                                        <Label text="PAPEL 2">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </VBox>
+                                                        <Separator prefWidth="200.0" />
+                                                        <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
+                                                            <children>
+                                                                <HBox>
+                                                                    <children>
+                                                                        <Label text="PAPEL 3">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </VBox>
+                                                        <Separator prefWidth="200.0" />
+                                                        <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
+                                                            <children>
+                                                                <HBox>
+                                                                    <children>
+                                                                        <Label text="PAPEL 4">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </VBox>
+                                                        <Separator prefWidth="200.0" />
+                                                        <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
+                                                            <children>
+                                                                <HBox>
+                                                                    <children>
+                                                                        <Label text="PAPEL 5">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </VBox>
+                                                        <Separator prefWidth="200.0" />
+                                                        <VBox alignment="CENTER" prefHeight="65.0" prefWidth="200.0" styleClass="cursor_hand" stylesheets="@css/hand.css">
+                                                            <children>
+                                                                <HBox>
+                                                                    <children>
+                                                                        <Label text="PAPEL 6">
+                                                                            <font>
+                                                                                <Font name="Calibri Bold" size="24.0" />
+                                                                            </font>
+                                                                        </Label>
+                                                                    </children>
+                                                                </HBox>
+                                                            </children>
+                                                        </VBox>
                                                     </children>
                                                 </VBox>
                                             </children>
@@ -837,17 +838,17 @@
                                                                 <String fx:value="view_all" />
                                                                 <String fx:value="upper_button" />
                                                             </styleClass>
-                                             <effect>
-                                                <DropShadow height="5.0" radius="2.0" width="5.0" />
-                                             </effect>
-                                             <stylesheets>
-                                                <URL value="@css/botao_upper.css" />
-                                                <URL value="@css/efeito_hover.css" />
-                                                <URL value="@css/efeito_pressed.css" />
-                                                <URL value="@css/hand.css" />
-                                                <URL value="@css/MainView.css" />
-                                                <URL value="@css/vier_all.css" />
-                                             </stylesheets>
+                                                            <effect>
+                                                                <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                                            </effect>
+                                                            <stylesheets>
+                                                                <URL value="@css/botao_upper.css" />
+                                                                <URL value="@css/efeito_hover.css" />
+                                                                <URL value="@css/efeito_pressed.css" />
+                                                                <URL value="@css/hand.css" />
+                                                                <URL value="@css/MainView.css" />
+                                                                <URL value="@css/vier_all.css" />
+                                                            </stylesheets>
                                                         </Button>
                                                     </children>
                                                     <padding>
@@ -855,64 +856,66 @@
                                                     </padding>
                                                 </HBox>
                                             </children>
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
+                                            <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </padding>
                                         </HBox>
-                              <VBox alignment="CENTER" prefHeight="287.0" prefWidth="206.0">
-                                 <children>
-                                    <VBox prefHeight="342.0" prefWidth="186.0">
-                                       <children>
-                                          <ImageView fitHeight="191.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@Imagens/marca.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 0px 0px 10px 10px;">
-                                       <children>
-                                          <Label text="Produto 1 ">
-                                             <font>
-                                                <Font name="Calibri Bold" size="24.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <effect>
-                                          <DropShadow blurType="ONE_PASS_BOX" height="3.0" radius="1.0" width="3.0" />
-                                       </effect></VBox>
-                                 </children>
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </VBox>
-                              <VBox alignment="CENTER" prefHeight="287.0" prefWidth="206.0">
-                                 <children>
-                                    <VBox prefHeight="342.0" prefWidth="186.0">
-                                       <children>
-                                          <ImageView fitHeight="191.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
-                                             <image>
-                                                <Image url="@Imagens/marca.png" />
-                                             </image>
-                                          </ImageView>
-                                       </children>
-                                    </VBox>
-                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 0px 0px 10px 10px;">
-                                       <children>
-                                          <Label text="Produto 2 ">
-                                             <font>
-                                                <Font name="Calibri Bold" size="24.0" />
-                                             </font>
-                                          </Label>
-                                       </children>
-                                       <effect>
-                                          <DropShadow blurType="ONE_PASS_BOX" height="3.0" radius="1.0" width="3.0" />
-                                       </effect></VBox>
-                                 </children>
-                                 <padding>
-                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-                                 </padding>
-                              </VBox>
+                                        <VBox alignment="CENTER" prefHeight="287.0" prefWidth="206.0">
+                                            <children>
+                                                <VBox prefHeight="342.0" prefWidth="186.0">
+                                                    <children>
+                                                        <ImageView fitHeight="191.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@Imagens/marca.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 0px 0px 10px 10px;">
+                                                    <children>
+                                                        <Label text="Produto 1 ">
+                                                            <font>
+                                                                <Font name="Calibri Bold" size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <effect>
+                                                        <DropShadow blurType="ONE_PASS_BOX" height="3.0" radius="1.0" width="3.0" />
+                                                    </effect>
+                                                </VBox>
+                                            </children>
+                                            <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </padding>
+                                        </VBox>
+                                        <VBox alignment="CENTER" prefHeight="287.0" prefWidth="206.0">
+                                            <children>
+                                                <VBox prefHeight="342.0" prefWidth="186.0">
+                                                    <children>
+                                                        <ImageView fitHeight="191.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@Imagens/marca.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </VBox>
+                                                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 0px 0px 10px 10px;">
+                                                    <children>
+                                                        <Label text="Produto 2 ">
+                                                            <font>
+                                                                <Font name="Calibri Bold" size="24.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                    <effect>
+                                                        <DropShadow blurType="ONE_PASS_BOX" height="3.0" radius="1.0" width="3.0" />
+                                                    </effect>
+                                                </VBox>
+                                            </children>
+                                            <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                            </padding>
+                                        </VBox>
                                     </children>
                                 </VBox>
                             </children>
