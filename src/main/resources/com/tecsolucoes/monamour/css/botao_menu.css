@@ -1,0 +1,10 @@
+.botao_menu:hover {
+    -fx-border-color: #F6D4DB;
+    -fx-border-width: 0 0 0 4;
+}
+.botao_menu:pressed {
+    -fx-background-color: #F6D4DB;
+    -fx-border-color: #F6D4DB;
+    -fx-border-width: 0 0 0 6;
+    -fx-background-radius: 0 30 30 0;
+}

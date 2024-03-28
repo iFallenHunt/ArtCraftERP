@@ -1,0 +1,8 @@
+.botao_financeiro {
+    -fx-background-color: #FFF0DC;
+}
+.botao_financeiro:pressed {
+    -fx-background-color: #FFF0DC;
+    -fx-border-color: #F6D4DB;
+    -fx-border-width: 0 0 0 4;
+}
