@@ -1,66 +1,41 @@
 # ArtCraftERP
 
-O ArtCraftERP é uma aplicação JavaFX desenvolvida para atender à necessidade específica de gerenciamento financeiro do novo empreendimento de Papelaria Criativa da minha esposa. 
+ArtCraftERP is a JavaFX application developed to meet the specific financial management needs of my wife's new Creative Stationery venture.
 
-Criado para simplificar o controle financeiro, o ArtCraftERP está em uma fase inicial de desenvolvimento, apresentando recursos limitados até o momento.
+Created to simplify financial control, ArtCraftERP is in its early development stage, with limited features at the moment.
 
+### About the Project
 
-Sobre o Projeto
+Our journey began when my wife started her own Creative Stationery business, and we realized the need for a system to efficiently manage her finances.
 
+With ArtCraftERP, we aim to provide a practical and intuitive solution to record expenses, track income, and maintain detailed financial monitoring.
 
-Nossa jornada começou quando minha esposa começou seu próprio negócio de Papelaria Criativa e percebemos a necessidade de um sistema para gerenciar suas finanças de forma eficiente. 
+### Key Features
 
-Com o ArtCraftERP, buscamos oferecer uma solução prática e intuitiva para registrar despesas, controlar receitas e manter um acompanhamento financeiro detalhado.
+    Account Management: Create and manage multiple bank accounts, including checking, savings, and investments.
+    Transaction Recording: Record expenses, income, and transfers between accounts for a clear view of the cash flow.
+    Financial Reports: Generate detailed reports and informative graphs for a better understanding of spending habits.
+    Flexible Customization: Customize transaction categories, set financial goals, and configure reminders for recurring payments.
 
+### Technologies Used
 
-Recursos Principais
+    JavaFX: Feature-rich user interface development platform for creating interactive desktop applications.
+    Spring Boot: Framework for Java application development that simplifies configuration and development of Spring-based applications.
+    MySQL: Relational database used to store and manage user financial data.
 
+### How to Contribute
 
-    Gerenciamento de Contas: Crie e administre diversas contas bancárias,
-    incluindo contas correntes, poupanças e investimentos.
+    Fork the repository.
+    Clone the fork to your local machine.
+    Implement new features or bug fixes.
+    Commit your changes.
+    Send a pull request to the original repository.
 
-    Registro de Transações: Registre despesas, receitas e transferências
-    entre contas para uma visão clara do fluxo de dinheiro.
+### Project Status
 
-    Relatórios Financeiros: Gere relatórios detalhados e gráficos
-    informativos para uma melhor compreensão dos hábitos de gastos.
+ArtCraftERP is in its early development stage and therefore has limited features at the moment. We are continuously working to add new features and enhance the user experience.
+Contact
 
-    Personalização Flexível: Personalize categorias de transações, 
-    estabeleça metas financeiras e configure lembretes para pagamentos recorrentes.
-    
-
-Tecnologias Utilizadas
-
-
-    JavaFX: Plataforma de desenvolvimento de interface de usuário
-    rica em recursos para criar aplicativos de desktop interativos.
-
-    Spring Boot: Framework para desenvolvimento de aplicativos
-    Java que simplifica a configuração e o desenvolvimento de aplicativos baseados em Spring.
-
-    MySQL: Banco de dados relacional utilizado
-    para armazenar e gerenciar os dados financeiros dos usuários.
-    
-
-Como Contribuir
-
-
-    Faça um fork do repositório.
-    Clone o fork para sua máquina local.
-    Implemente novos recursos ou correções de bugs.
-    Faça commits das suas alterações.
-    Envie um pull request para o repositório original.
-    
-
-Status do Projeto
-
-O MonAmour está em uma fase inicial de desenvolvimento e, portanto, possui recursos limitados até o momento. 
-
-Estamos trabalhando continuamente para adicionar novos recursos e aprimorar a experiência do usuário.
-
-
-Contato
-
-Para mais informações ou suporte, entre em contato com nossa equipe de desenvolvimento:
+For more information or support, please contact our development team:
 
     Email: luksantos.silva@gmail.com
