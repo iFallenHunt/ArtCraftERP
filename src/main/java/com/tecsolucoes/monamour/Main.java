@@ -13,7 +13,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("tela_inicio.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("ArtCraftERP - MonAmour!");
+        stage.setTitle("ArtCraftERP - MonAmour");
         stage.setScene(scene);
         stage.show();
 
