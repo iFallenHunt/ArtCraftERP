@@ -15,15 +15,26 @@ With ArtCraftERP, we aim to provide a practical and intuitive solution to record
 
 ### Key Features
 
-    Account Management: Create and manage multiple bank accounts, including checking, savings, and investments.
-    Transaction Recording: Record expenses, income, and transfers between accounts for a clear view of the cash flow.
-    Financial Reports: Generate detailed reports and informative graphs for a better understanding of spending habits.
-    Flexible Customization: Customize transaction categories, set financial goals, and configure reminders for recurring payments.
+    Account Management: Create and manage multiple bank accounts, 
+    including checking, savings, and investments.
+    
+    Transaction Recording: Record expenses, income, 
+    and transfers between accounts for a clear view of the cash flow.
+    
+    Financial Reports: Generate detailed reports and informative graphs
+    for a better understanding of spending habits.
+    
+    Flexible Customization: Customize transaction categories, set financial goals,
+    and configure reminders for recurring payments.
 
 ### Technologies Used
 
-    JavaFX: Feature-rich user interface development platform for creating interactive desktop applications.
-    Spring Boot: Framework for Java application development that simplifies configuration and development of Spring-based applications.
+    JavaFX: Feature-rich user interface development platform for creating
+    interactive desktop applications.
+    
+    Spring Boot: Framework for Java application development that simplifies
+    configuration and development of Spring-based applications.
+    
     MySQL: Relational database used to store and manage user financial data.
 
 ### How to Contribute
