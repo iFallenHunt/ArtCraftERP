@@ -49,7 +49,7 @@
                         </Button>
                     </children>
                 </VBox>
-                <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0" style="-fx-background-radius: 0 25 25 0; -fx-border-radius: 0 25 25 0;">
+                <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
                     <children>
                         <Label alignment="CENTER" onMouseClicked="#switchToTelaInicio" prefHeight="34.0" prefWidth="59.0" text="Inicio" textFill="#434343">
                             <font>
@@ -63,18 +63,10 @@
                     <stylesheets>
                         <URL value="@css/hand.css" />
                         <URL value="@css/botao_menu.css" />
-                  <URL value="@css/efeito_pressed.css" />
-                  <URL value="@css/vier_all.css" />
-                  <URL value="@css/MainView.css" />
-                  <URL value="@css/hand.css" />
-                  <URL value="@css/efeito_hover.css" />
-                  <URL value="@css/botao_upper.css" />
                     </stylesheets>
                     <styleClass>
                         <String fx:value="botao_menu" />
                         <String fx:value="cursor_hand" />
-                  <String fx:value="button" />
-                  <String fx:value="view_all" />
                     </styleClass>
                 </HBox>
                 <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
@@ -332,12 +324,12 @@
                                                     <children>
                                                         <VBox prefHeight="172.0" prefWidth="494.0">
                                                             <children>
-                                                                <Label contentDisplay="CENTER" prefHeight="50.0" prefWidth="220.0" text="Inicio" textFill="#121212">
+                                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="220.0" text="MonAmour" textFill="#121212">
                                                                     <font>
                                                                         <Font name="Calibri Bold" size="36.0" />
                                                                     </font>
                                                                     <padding>
-                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                                                                     </padding>
                                                                 </Label>
                                                                 <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" text="Novos Produto +" textFill="WHITE">
@@ -348,7 +340,7 @@
                                                                         <Insets />
                                                                     </opaqueInsets>
                                                                     <VBox.margin>
-                                                                        <Insets bottom="-5.0" top="20.0" />
+                                                                        <Insets bottom="-5.0" top="10.0" />
                                                                     </VBox.margin>
                                                                     <effect>
                                                                         <DropShadow height="4.0" radius="1.5" width="4.0">
