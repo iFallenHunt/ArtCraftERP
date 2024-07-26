@@ -1,0 +1,6 @@
+/* MainView.css */
+.main-view {
+    -fx-background-color: #f9f9f9; /* Light gray background */
+    -fx-padding: 10px; /* Padding around the main content */
+    -fx-spacing: 10px; /* Spacing between children */
+}
