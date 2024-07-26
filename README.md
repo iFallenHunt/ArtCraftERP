@@ -94,13 +94,21 @@ src/main/resources
 
 2. **Melhoria do Front End:**
     - Estilização e aprimoramento da interface do usuário com CSS e JavaScript.
+    - Inclusão de novos componentes e interações para melhorar a experiência do usuário.
 
 3. **Criação das Exceções:**
     - Implementação de um pacote de exceções para tratamento adequado de erros na aplicação.
+    - Adição de classes para gerenciar erros específicos e garantir respostas consistentes da API.
 
 4. **Correção das Classes Controllers:**
     - Ajuste e padronização dos métodos nas classes de controllers para garantir a conformidade com as boas práticas e o
       padrão RESTful.
+    - Refatoração de métodos para melhorar a eficiência e a legibilidade do código.
+
+5. **Adição de Funcionalidades:**
+    - Implementação de novos recursos conforme necessário, como financeiro, relatórios financeiros, funcionalidades avançadas de
+      gerenciamento de estoque e integrações com outros sistemas.
+    - Melhoria na segurança da aplicação, incluindo autenticação e autorização de usuários.
 
 ## Diagrama de Classe
 
