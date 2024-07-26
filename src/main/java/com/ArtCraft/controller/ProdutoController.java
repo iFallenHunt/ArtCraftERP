@@ -8,9 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
-@RequestMapping("/api/produtos")
+@RequestMapping("/produtos")
 public class ProdutoController {
 
     @Autowired
@@ -23,11 +22,9 @@ public class ProdutoController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Produto> getProdutoById(@PathVariable Long id) {
-        Produto produto = produtoRepository.findById(id).orElse(null);
-        if (produto == null) {
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(produto);
+        return produtoRepository.findById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @PostMapping
@@ -37,25 +34,24 @@ public class ProdutoController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Produto> updateProduto(@PathVariable Long id, @RequestBody Produto produtoDetails) {
-        Produto produto = produtoRepository.findById(id).orElse(null);
-        if (produto == null) {
-            return ResponseEntity.notFound().build();
-        }
-        produto.setNome(produtoDetails.getNome());
-        produto.setDescricao(produtoDetails.getDescricao());
-        produto.setPreco(produtoDetails.getPreco());
-        produto.setQuantidade(produtoDetails.getQuantidade());
-        Produto updatedProduto = produtoRepository.save(produto);
-        return ResponseEntity.ok(updatedProduto);
+        return produtoRepository.findById(id)
+                .map(produto -> {
+                    produto.setNome(produtoDetails.getNome());
+                    produto.setDescricao(produtoDetails.getDescricao());
+                    produto.setPreco(produtoDetails.getPreco());
+                    produto.setQuantidade(produtoDetails.getQuantidade());
+                    Produto updatedProduto = produtoRepository.save(produto);
+                    return ResponseEntity.ok(updatedProduto);
+                })
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduto(@PathVariable Long id) {
-        Produto produto = produtoRepository.findById(id).orElse(null);
-        if (produto == null) {
+        if (!produtoRepository.existsById(id)) {
             return ResponseEntity.notFound().build();
         }
-        produtoRepository.delete(produto);
+        produtoRepository.deleteById(id);
         return ResponseEntity.noContent().build();
     }
 }
