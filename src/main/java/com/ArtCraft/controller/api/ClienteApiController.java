@@ -1,4 +1,4 @@
-package com.ArtCraft.controller;
+package com.ArtCraft.controller.api;
 
 import com.ArtCraft.model.Cliente;
 import com.ArtCraft.repository.ClienteRepository;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/clientes")
-public class ClienteController {
+@RequestMapping("/api/clientes")
+public class ClienteApiController {
 
     @Autowired
     private ClienteRepository clienteRepository;

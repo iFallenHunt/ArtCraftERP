@@ -1,4 +1,4 @@
-package com.ArtCraft.controller;
+package com.ArtCraft.controller.api;
 
 import com.ArtCraft.model.Fornecedor;
 import com.ArtCraft.repository.FornecedorRepository;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/fornecedores")
-public class FornecedorController {
+@RequestMapping("/api/fornecedores")
+public class FornecedorApiController {
 
     @Autowired
     private FornecedorRepository fornecedorRepository;

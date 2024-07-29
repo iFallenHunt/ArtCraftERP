@@ -1,4 +1,4 @@
-package com.ArtCraft.controller;
+package com.ArtCraft.controller.api;
 
 import com.ArtCraft.model.Estoque;
 import com.ArtCraft.repository.EstoqueRepository;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/estoques")
-public class EstoqueController {
+@RequestMapping("/api/estoque")
+public class EstoqueApiController {
 
     @Autowired
     private EstoqueRepository estoqueRepository;

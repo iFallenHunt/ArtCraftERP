@@ -1,6 +1,4 @@
-package com.ArtCraft.controller;
-
-import java.util.List;
+package com.ArtCraft.controller.api;
 
 import com.ArtCraft.model.Produto;
 import com.ArtCraft.repository.ProdutoRepository;
@@ -8,9 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("/produtos")
-public class ProdutoController {
+@RequestMapping("/api/produtos")
+public class ProdutoApiController {
 
     @Autowired
     private ProdutoRepository produtoRepository;
