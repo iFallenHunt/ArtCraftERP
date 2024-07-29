@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Detalhes do Estoque</title>
+    <link rel="stylesheet" href="/css/estoque.css">
+</head>
+<body>
+<header>
+    <h1>Detalhes do Estoque</h1>
+    <a class="button view-all" href="/web/estoque">Voltar</a>
+</header>
+<div class="container">
+    <div class="stock-item">
+        <h2 th:text="${estoque.nome}"></h2>
+        <p>Quantidade: <span th:text="${estoque.quantidade}"></span></p>
+    </div>
+</div>
+</body>
+</html>

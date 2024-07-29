@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Detalhes do Cliente</title>
+    <link rel="stylesheet" href="/css/cliente.css">
+</head>
+<body>
+<header>
+    <h1>Detalhes do Cliente</h1>
+    <a class="button view-all" href="/web/clientes">Voltar</a>
+</header>
+<div class="container">
+    <div class="client-item">
+        <h2 th:text="${cliente.nome}"></h2>
+        <p>Email: <span th:text="${cliente.email}"></span></p>
+    </div>
+</div>
+</body>
+</html>

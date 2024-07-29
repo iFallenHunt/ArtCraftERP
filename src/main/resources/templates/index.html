@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="/css/efeito-pressed.css">
     <link rel="stylesheet" href="/css/hand.css">
     <link rel="stylesheet" href="/css/view-all.css">
-    <!-- Referência ao jQuery -->
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <!-- Referência ao script personalizado -->
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Inclusão do CSS para centralização -->
+    <script src="/js/jquery-3.6.0.min.js"></script> <!-- Inclusão do jQuery -->
     <script src="/js/script.js" defer></script>
 </head>
 <body>
@@ -31,7 +30,7 @@
 
     <div class="estoque">
         <h2>Estoque</h2>
-        <button class="button view-all">Ver Todos</button>
+        <a class="button view-all" href="/web/estoque">Ver Todos</a> <!-- Corrigido para redirecionar para a página de estoque -->
         <div class="items">
             <div class="item">PAPEL 1</div>
             <div class="item">PAPEL 2</div>
@@ -44,7 +43,7 @@
 
     <div class="produtos">
         <h2>Produtos</h2>
-        <button class="button view-all">Ver Todos</button>
+        <a class="button view-all" href="/web/produtos">Ver Todos</a>
         <div class="produto">
             <img src="/images/marca.png" alt="Produto 1">
             <div class="produto-info">Produto 1</div>
@@ -53,6 +52,11 @@
             <img src="/images/marca.png" alt="Produto 2">
             <div class="produto-info">Produto 2</div>
         </div>
+    </div>
+
+    <div class="clientes">
+        <h2>Clientes</h2>
+        <a class="button view-all" href="/web/clientes">Ver Todos</a>
     </div>
 </div>
 </body>

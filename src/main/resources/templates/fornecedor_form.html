@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Formulário de Fornecedor</title>
+    <link rel="stylesheet" href="/css/fornecedor.css">
+</head>
+<body>
+<h1 th:text="${fornecedor.id != null ? 'Editar Fornecedor' : 'Novo Fornecedor'}"></h1>
+<form th:action="@{/web/fornecedores/save}" th:object="${fornecedor}" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" th:field="*{nome}" required>
+    <label for="contato">Contato:</label>
+    <input type="text" id="contato" th:field="*{contato}" required>
+    <button type="submit">Salvar</button>
+</form>
+</body>
+</html>

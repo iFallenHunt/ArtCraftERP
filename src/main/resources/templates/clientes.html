@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Estoque</title>
-    <link rel="stylesheet" href="/css/estoque.css">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="/css/cliente.css">
     <link rel="stylesheet" href="/css/styles.css"> <!-- Inclusão do CSS para centralização -->
     <script src="/js/jquery-3.6.0.min.js"></script> <!-- Inclusão do jQuery -->
     <script src="/js/script.js" defer></script>
 </head>
 <body>
 <header>
-    <h1>Estoque</h1>
+    <h1>Clientes</h1>
+    <a class="button view-all" href="/web/clientes/new">Novo Cliente</a>
     <a class="button back" href="/">Voltar para Tela Inicial</a> <!-- Botão de volta -->
 </header>
 <div class="container">
     <div class="content">
-        <div class="item" th:each="item : ${estoque}">
-            <img src="item-image.jpg" alt="Item Image">
+        <div class="client-item" th:each="cliente : ${clientes}">
+            <img src="cliente-image.jpg" alt="Cliente Image">
             <div class="info">
-                <h2 th:text="${item.nome}"></h2>
-                <p th:text="${item.descricao}"></p>
-                <a th:href="@{/web/estoque/details/{id}(id=${item.id})}">Detalhes</a>
+                <h2 th:text="${cliente.nome}"></h2>
+                <p th:text="${cliente.email}"></p>
+                <a th:href="@{/web/clientes/details/{id}(id=${cliente.id})}">Detalhes</a>
             </div>
         </div>
     </div>

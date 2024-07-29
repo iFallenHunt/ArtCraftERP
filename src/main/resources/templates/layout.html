@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtCraft ERP</title>
+    <link rel="stylesheet" href="/css/main-view.css">
+    <link rel="stylesheet" href="/css/botao-financeiro.css">
+    <link rel="stylesheet" href="/css/botao-upper.css">
+    <link rel="stylesheet" href="/css/efeito-hover.css">
+    <link rel="stylesheet" href="/css/efeito-pressed.css">
+    <link rel="stylesheet" href="/css/hand.css">
+    <link rel="stylesheet" href="/css/view-all.css">
+    <link rel="stylesheet" href="/css/back-to-home.css"> <!-- Novo CSS -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+<div class="main-view">
+    <header>
+        <h1>ArtCraft ERP</h1>
+        <a href="/" class="button back-to-home">Voltar para a Tela Inicial</a>
+    </header>
+    <div class="content">
+        <div th:replace="${body}"></div>
+    </div>
+</div>
+</body>
+</html>

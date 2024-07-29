@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fornecedores</title>
-    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/fornecedor.css">
-    <!-- Referência ao jQuery -->
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <!-- Referência ao script personalizado -->
-    <script src="/js/script.js" defer></script>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Inclusão do CSS para centralização -->
+    <script src="/js/jquery-3.6.0.min.js"></script> <!-- Inclusão do jQuery -->
 </head>
 <body>
+<header>
+    <h1>Fornecedores</h1>
+    <a class="button back-to-home" href="/">Voltar para a Tela Inicial</a> <!-- Botão de volta -->
+    <a class="button view-all" href="/web/fornecedores/new">Novo Fornecedor</a>
+</header>
 <div class="container">
-    <header>
-        <h1>Fornecedores</h1>
-        <button class="button view-all">Ver Todos</button>
-    </header>
     <div class="content">
-        <div class="supplier-item">
-            <img src="/images/supplier.png" alt="Fornecedor 1">
+        <div class="fornecedor-item" th:each="fornecedor : ${fornecedores}">
+            <img src="fornecedor-image.jpg" alt="Fornecedor Image">
             <div class="info">
-                <h2>Fornecedor 1</h2>
-                <p>Informações sobre o fornecedor 1.</p>
+                <h2 th:text="${fornecedor.nome}"></h2>
+                <p th:text="${fornecedor.email}"></p>
+                <a th:href="@{/web/fornecedores/details/{id}(id=${fornecedor.id})}">Detalhes</a>
             </div>
         </div>
-        <!-- Adicione mais itens de fornecedor conforme necessário -->
     </div>
 </div>
+<script src="/js/script.js"></script> <!-- Inclusão do script personalizado -->
 </body>
 </html>

@@ -1,31 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/produto.css">
-    <!-- Referência ao jQuery -->
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <!-- Referência ao script personalizado -->
+    <link rel="stylesheet" href="/css/produtos.css">
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Inclusão do CSS para centralização -->
+    <script src="/js/jquery-3.6.0.min.js"></script> <!-- Inclusão do jQuery -->
     <script src="/js/script.js" defer></script>
 </head>
 <body>
+<header>
+    <h1>Produtos</h1>
+    <a class="button back" href="/">Voltar para Tela Inicial</a> <!-- Botão de volta -->
+</header>
 <div class="container">
-    <header>
-        <h1>Produtos</h1>
-        <button class="button view-all">Ver Todos</button>
-    </header>
     <div class="content">
-        <div class="product-item">
-            <img src="/images/product.png" alt="Produto 1">
+        <div class="produto" th:each="produto : ${produtos}">
+            <img src="produto-image.jpg" alt="Produto Image">
             <div class="info">
-                <h2>Produto 1</h2>
-                <p>Descrição do produto 1.</p>
+                <h2 th:text="${produto.nome}"></h2>
+                <p th:text="${produto.descricao}"></p>
+                <a th:href="@{/web/produtos/details/{id}(id=${produto.id})}">Detalhes</a>
             </div>
         </div>
-        <!-- Adicione mais itens de produto conforme necessário -->
     </div>
 </div>
 </body>

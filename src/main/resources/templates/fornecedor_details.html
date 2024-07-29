@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Detalhes do Fornecedor</title>
+    <link rel="stylesheet" href="/css/fornecedor.css">
+</head>
+<body>
+<header>
+    <h1>Detalhes do Fornecedor</h1>
+    <a class="button view-all" href="/web/fornecedores">Voltar</a>
+</header>
+<div class="container">
+    <div class="supplier-item">
+        <h2 th:text="${fornecedor.nome}"></h2>
+        <p>Contato: <span th:text="${fornecedor.contato}"></span></p>
+    </div>
+</div>
+</body>
+</html>
