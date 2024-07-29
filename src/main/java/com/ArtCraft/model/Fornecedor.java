@@ -6,6 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 
 @Entity
@@ -22,7 +23,7 @@ public class Fornecedor {
 
     @Column(unique = true)
     @Schema(description = "O CNPJ do Fornecedor", example = "12345678000190")
-    private Long cnpj;
+    private String cnpj;
 
     @Schema(description = "O telefone do Fornecedor", example = "+55 11 88888-8888")
     private String telefone;

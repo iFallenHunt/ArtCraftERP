@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -31,6 +32,7 @@ public class Cliente {
     @Schema(description = "O endereço do Cliente", example = "Rua das Flores, 123")
     private String endereco;
 
+    @NotNull
     @Schema(description = "A data de aniversário do Cliente", example = "01/01/1990")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
