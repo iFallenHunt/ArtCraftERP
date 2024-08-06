@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Venda</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/vendas_script.js" defer></script>
+</head>
+<body>
+<div class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/web/clientes">Clientes</a></li>
+        <li><a href="/web/estoque">Estoques</a></li>
+        <li><a href="/web/fornecedores">Fornecedores</a></li>
+        <li><a href="/web/produtos">Produtos</a></li>
+        <li><a href="/web/vendas">Vendas</a></li>
+        <li><a href="/web/financeiro">Financeiro</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <h1>Registrar Venda</h1>
+    <form id="vendas-form" action="/web/vendas" method="POST">
+        <div class="form-group">
+            <label for="cliente">Cliente:</label>
+            <select id="cliente" name="cliente">
+                <option value="">Selecione um cliente</option>
+                <!-- Options de clientes serão inseridas aqui dinamicamente -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto">
+                <option value="">Selecione um produto</option>
+                <!-- Options de produtos serão inseridas aqui dinamicamente -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="total">Total:</label>
+            <input type="text" id="total" name="total" readonly>
+        </div>
+
+        <button type="submit" class="button">Salvar Venda</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

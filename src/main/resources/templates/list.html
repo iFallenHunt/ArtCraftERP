@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Vendas</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="sidebar">
+    <h2>ArtCraftERP</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/web/clientes">Clientes</a></li>
+        <li><a href="/web/estoque">Estoques</a></li>
+        <li><a href="/web/fornecedores">Fornecedores</a></li>
+        <li><a href="/web/produtos">Produtos</a></li>
+        <li><a href="/web/vendas">Vendas</a></li>
+        <li><a href="/web/financeiro">Financeiro</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <h1>Lista de Vendas</h1>
+    <section>
+        <h2>Registro de Vendas</h2>
+        <p>Aqui você verá o registro de vendas.</p>
+        <a href="/web/vendas/new">Registrar Nova Venda</a>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Data</th>
+                <th>Valor Total</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="venda : ${vendas}">
+                <td th:text="${venda.id}"></td>
+                <td th:text="${venda.cliente.nome}"></td>
+                <td th:text="${venda.dataVenda}"></td>
+                <td th:text="${venda.valorTotal}"></td>
+                <td>
+                    <a th:href="@{/web/vendas/{id}(id=${venda.id})}">Editar</a> |
+                    <a th:href="@{/web/vendas/{id}(id=${venda.id})}" th:onclick="return confirm('Tem certeza que deseja excluir?');">Excluir</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
