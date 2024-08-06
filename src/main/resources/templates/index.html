@@ -1,63 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArtCraft ERP</title>
-    <link rel="stylesheet" href="/css/main-view.css">
-    <link rel="stylesheet" href="/css/botao-financeiro.css">
-    <link rel="stylesheet" href="/css/botao-upper.css">
-    <link rel="stylesheet" href="/css/efeito-hover.css">
-    <link rel="stylesheet" href="/css/efeito-pressed.css">
-    <link rel="stylesheet" href="/css/hand.css">
-    <link rel="stylesheet" href="/css/view-all.css">
-    <link rel="stylesheet" href="/css/styles.css"> <!-- Inclusão do CSS para centralização -->
-    <script src="/js/jquery-3.6.0.min.js"></script> <!-- Inclusão do jQuery -->
-    <script src="/js/script.js" defer></script>
+    <title>Clientes</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Adicione o caminho para o seu CSS -->
 </head>
 <body>
-<div class="main-view">
-    <div class="financeiro">
-        <h1>Financeiro</h1>
-        <button class="botao-financeiro">
-            <img src="/images/grafico-preditivo.png" alt="Gráfico Preditivo">
-            Teste 6
-        </button>
-        <div class="info">
-            <span>Teste 7</span>
-        </div>
-    </div>
+<header>
+    <h1>Clientes</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="web/clientes">Clientes</a></li>
+            <li><a href="/web/estoque">Estoques</a></li>
+            <li><a href="web/fornecedores">Fornecedores</a></li>
+            <li><a href="web/produtos">Produtos</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <div class="estoque">
-        <h2>Estoque</h2>
-        <a class="button view-all" href="/web/estoque">Ver Todos</a> <!-- Corrigido para redirecionar para a página de estoque -->
-        <div class="items">
-            <div class="item">PAPEL 1</div>
-            <div class="item">PAPEL 2</div>
-            <div class="item">PAPEL 3</div>
-            <div class="item">PAPEL 4</div>
-            <div class="item">PAPEL 5</div>
-            <div class="item">PAPEL 6</div>
-        </div>
-    </div>
+<main>
+    <section>
+        <h2>Lista de Clientes</h2>
+        <p>Aqui você verá a lista de clientes.</p>
+    </section>
+</main>
 
-    <div class="produtos">
-        <h2>Produtos</h2>
-        <a class="button view-all" href="/web/produtos">Ver Todos</a>
-        <div class="produto">
-            <img src="/images/marca.png" alt="Produto 1">
-            <div class="produto-info">Produto 1</div>
-        </div>
-        <div class="produto">
-            <img src="/images/marca.png" alt="Produto 2">
-            <div class="produto-info">Produto 2</div>
-        </div>
-    </div>
-
-    <div class="clientes">
-        <h2>Clientes</h2>
-        <a class="button view-all" href="/web/clientes">Ver Todos</a>
-    </div>
-</div>
+<footer>
+    <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>

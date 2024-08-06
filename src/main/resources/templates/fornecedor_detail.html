@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Fornecedor</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Detalhes do Fornecedor</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/web/clientes">Clientes</a></li>
+            <li><a href="/web/estoque">Estoques</a></li>
+            <li><a href="/web/fornecedores">Fornecedores</a></li>
+            <li><a href="/web/produtos">Produtos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2 th:text="${fornecedor.nome}">Nome do Fornecedor</h2>
+        <p><strong>ID:</strong> <span th:text="${fornecedor.id}"></span></p>
+        <p><strong>Nome:</strong> <span th:text="${fornecedor.nome}"></span></p>
+        <p><strong>CNPJ:</strong> <span th:text="${fornecedor.cnpj}"></span></p>
+        <p><strong>Endereço:</strong> <span th:text="${fornecedor.endereco}"></span></p>
+        <p><strong>Telefone:</strong> <span th:text="${fornecedor.telefone}"></span></p>
+
+        <a th:href="@{/fornecedor/edit/{id}(id=${fornecedor.id})}" class="button">Editar</a>
+        <a th:href="@{/fornecedor/delete/{id}(id=${fornecedor.id})}"
+           onclick="return confirm('Tem certeza que deseja excluir este fornecedor?')" class="button">Excluir</a>
+        <a href="/web/fornecedores" class="button">Voltar à Lista</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

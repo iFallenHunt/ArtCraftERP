@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/web/clientes")
@@ -19,12 +18,7 @@ public class ClienteWebController {
 
     @GetMapping
     public String getAllClientes(Model model, @RequestParam(required = false) String name) {
-        List<Cliente> clientes;
-        if (name != null && !name.isEmpty()) {
-            clientes = clienteService.findByName(name);
-        } else {
-            clientes = clienteService.findAll();
-        }
+        List<Cliente> clientes = (name != null && !name.isEmpty()) ? clienteService.findByName(name) : clienteService.findAll();
         model.addAttribute("clientes", clientes);
         return "clientes";
     }
@@ -32,21 +26,21 @@ public class ClienteWebController {
     @GetMapping("/new")
     public String createClienteForm(Model model) {
         model.addAttribute("cliente", new Cliente());
-        return "cliente_form";
+        return "clientes_form";
     }
 
     @GetMapping("/details/{id}")
     public String viewClienteDetails(@PathVariable Long id, Model model) {
-        Optional<Cliente> cliente = clienteService.findById(id);
-        model.addAttribute("cliente", cliente.orElse(null));
+        Cliente cliente = clienteService.findById(id).orElse(null);
+        model.addAttribute("cliente", cliente);
         return "cliente_details";
     }
 
     @GetMapping("/edit/{id}")
     public String editClienteForm(@PathVariable Long id, Model model) {
-        Optional<Cliente> cliente = clienteService.findById(id);
-        model.addAttribute("cliente", cliente.orElse(null));
-        return "cliente_form";
+        Cliente cliente = clienteService.findById(id).orElse(null);
+        model.addAttribute("cliente", cliente);
+        return "clientes_form";
     }
 
     @PostMapping("/save")

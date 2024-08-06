@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Detalhes do Produto</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/web/clientes">Clientes</a></li>
+            <li><a href="/web/estoque">Estoques</a></li>
+            <li><a href="/web/fornecedores">Fornecedores</a></li>
+            <li><a href="/web/produtos">Produtos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2 th:text="${produto.nome}">Nome do Produto</h2>
+        <p><strong>ID:</strong> <span th:text="${produto.id}"></span></p>
+        <p><strong>Nome:</strong> <span th:text="${produto.nome}"></span></p>
+        <p><strong>Descrição:</strong> <span th:text="${produto.descricao}"></span></p>
+        <p><strong>Preço:</strong> <span th:text="${produto.preco}"></span></p>
+        <p><strong>Quantidade:</strong> <span th:text="${produto.quantidade}"></span></p>
+        <p><strong>Categoria:</strong> <span th:text="${produto.categoria}"></span></p>
+
+        <a th:href="@{/produto/edit/{id}(id=${produto.id})}" class="button">Editar</a>
+        <a th:href="@{/produto/delete/{id}(id=${produto.id})}"
+           onclick="return confirm('Tem certeza que deseja excluir este produto?')" class="button">Excluir</a>
+        <a href="/web/produtos" class="button">Voltar à Lista</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

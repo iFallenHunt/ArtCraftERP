@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Cliente</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Adicione o caminho para o seu CSS -->
+</head>
+<body>
+<header>
+    <h1>Detalhes do Cliente</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/web/clientes">Clientes</a></li>
+            <li><a href="/web/estoque">Estoques</a></li>
+            <li><a href="/web/fornecedores">Fornecedores</a></li>
+            <li><a href="/web/produtos">Produtos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Detalhes do Cliente</h2>
+        <div>
+            <p><strong>ID:</strong> <span th:text="${cliente.id}"></span></p>
+            <p><strong>Nome:</strong> <span th:text="${cliente.nome}"></span></p>
+            <p><strong>Email:</strong> <span th:text="${cliente.email}"></span></p>
+            <p><strong>Telefone:</strong> <span th:text="${cliente.telefone}"></span></p>
+            <p><strong>Endereço:</strong> <span th:text="${cliente.endereco}"></span></p>
+            <p><strong>Data de Nascimento:</strong> <span th:text="${#dates.format(cliente.dataNascimento, 'dd/MM/yyyy')}"></span></p>
+        </div>
+        <div>
+            <a th:href="@{/web/clientes/edit/{id}(id=${cliente.id})}" class="button">Editar</a>
+            <a href="/web/clientes" class="button">Voltar</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>

@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/web/fornecedores")
@@ -32,23 +31,15 @@ public class FornecedorWebController {
 
     @GetMapping("/details/{id}")
     public String viewFornecedorDetails(@PathVariable Long id, Model model) {
-        Optional<Fornecedor> fornecedor = fornecedorService.findById(id);
-        if (fornecedor.isPresent()) {
-            model.addAttribute("fornecedor", fornecedor.get());
-        } else {
-            model.addAttribute("error", "Fornecedor not found");
-        }
+        Fornecedor fornecedor = fornecedorService.findById(id).orElse(null);
+        model.addAttribute("fornecedor", fornecedor);
         return "fornecedor_details";
     }
 
     @GetMapping("/edit/{id}")
     public String editFornecedorForm(@PathVariable Long id, Model model) {
-        Optional<Fornecedor> fornecedor = fornecedorService.findById(id);
-        if (fornecedor.isPresent()) {
-            model.addAttribute("fornecedor", fornecedor.get());
-        } else {
-            model.addAttribute("error", "Fornecedor not found");
-        }
+        Fornecedor fornecedor = fornecedorService.findById(id).orElse(null);
+        model.addAttribute("fornecedor", fornecedor);
         return "fornecedor_form";
     }
 

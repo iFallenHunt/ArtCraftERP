@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="/css/main-view.css">
     <link rel="stylesheet" href="/css/botao-financeiro.css">
     <link rel="stylesheet" href="/css/botao-upper.css">
-    <link rel="stylesheet" href="/css/efeito-hover.css">
     <link rel="stylesheet" href="/css/efeito-pressed.css">
     <link rel="stylesheet" href="/css/hand.css">
     <link rel="stylesheet" href="/css/view-all.css">
-    <link rel="stylesheet" href="/css/back-to-home.css"> <!-- Novo CSS -->
-    <script src="/js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/jquery-3.6.0.min.js" defer></script>
     <script src="/js/script.js" defer></script>
 </head>
 <body>
 <div class="main-view">
-    <header>
-        <h1>ArtCraft ERP</h1>
-        <a href="/" class="button back-to-home">Voltar para a Tela Inicial</a>
-    </header>
-    <div class="content">
-        <div th:replace="${body}"></div>
+    <h1>Financeiro</h1>
+    <button class="botao_financeiro">
+        <img src="Imagens/grafico-preditivo.png" alt="Gráfico Preditivo">
+        Teste 6
+    </button>
+    <div class="info">
+        <p>Descrição do botão financeiro.</p>
     </div>
 </div>
 </body>

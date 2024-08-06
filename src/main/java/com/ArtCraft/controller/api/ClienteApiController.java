@@ -41,8 +41,7 @@ public class ClienteApiController {
                     cliente.setTelefone(clienteDetails.getTelefone());
                     cliente.setEndereco(clienteDetails.getEndereco());
                     cliente.setDataNascimento(clienteDetails.getDataNascimento());
-                    Cliente updatedCliente = clienteRepository.save(cliente);
-                    return ResponseEntity.ok(updatedCliente);
+                    return ResponseEntity.ok(clienteRepository.save(cliente));
                 })
                 .orElse(ResponseEntity.notFound().build());
     }

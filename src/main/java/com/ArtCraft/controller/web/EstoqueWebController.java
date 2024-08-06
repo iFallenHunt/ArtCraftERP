@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/web/estoque")
@@ -18,38 +17,30 @@ public class EstoqueWebController {
     private EstoqueService estoqueService;
 
     @GetMapping
-    public String getAllEstoques(Model model) {
-        List<Estoque> estoques = estoqueService.findAll();
-        model.addAttribute("estoques", estoques);
-        return "estoque"; // Verifique se este arquivo existe em templates
+    public String getAllEstoque(Model model) {
+        List<Estoque> estoque = estoqueService.findAll();
+        model.addAttribute("estoque", estoque);
+        return "estoque";
     }
 
     @GetMapping("/new")
     public String createEstoqueForm(Model model) {
         model.addAttribute("estoque", new Estoque());
-        return "estoque_form"; // Verifique se este arquivo existe em templates
+        return "estoque_form";
     }
 
     @GetMapping("/details/{id}")
     public String viewEstoqueDetails(@PathVariable Long id, Model model) {
-        Optional<Estoque> estoque = estoqueService.findById(id);
-        if (estoque.isPresent()) {
-            model.addAttribute("estoque", estoque.get());
-        } else {
-            model.addAttribute("error", "Estoque not found");
-        }
-        return "estoque_details"; // Verifique se este arquivo existe em templates
+        Estoque estoque = estoqueService.findById(id).orElse(null);
+        model.addAttribute("estoque", estoque);
+        return "estoque_details";
     }
 
     @GetMapping("/edit/{id}")
     public String editEstoqueForm(@PathVariable Long id, Model model) {
-        Optional<Estoque> estoque = estoqueService.findById(id);
-        if (estoque.isPresent()) {
-            model.addAttribute("estoque", estoque.get());
-        } else {
-            model.addAttribute("error", "Estoque not found");
-        }
-        return "estoque_form"; // Verifique se este arquivo existe em templates
+        Estoque estoque = estoqueService.findById(id).orElse(null);
+        model.addAttribute("estoque", estoque);
+        return "estoque_form";
     }
 
     @PostMapping("/save")

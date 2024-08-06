@@ -3,18 +3,18 @@
 <head>
     <title>Estoque</title>
     <link rel="stylesheet" href="/css/estoque.css">
-    <link rel="stylesheet" href="/css/styles.css"> <!-- Inclusão do CSS para centralização -->
-    <script src="/js/jquery-3.6.0.min.js"></script> <!-- Inclusão do jQuery -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/jquery-3.6.0.min.js" defer></script>
     <script src="/js/script.js" defer></script>
 </head>
 <body>
 <header>
     <h1>Estoque</h1>
-    <a class="button back" href="/">Voltar para Tela Inicial</a> <!-- Botão de volta -->
+    <a class="button back-to-home" href="/">Voltar para a Tela Inicial</a>
 </header>
 <div class="container">
     <div class="content">
-        <div class="item" th:each="item : ${estoque}">
+        <div class="estoque-item" th:each="item : ${estoque}">
             <img src="item-image.jpg" alt="Item Image">
             <div class="info">
                 <h2 th:text="${item.nome}"></h2>

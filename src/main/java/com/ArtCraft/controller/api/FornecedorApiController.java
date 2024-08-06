@@ -40,8 +40,7 @@ public class FornecedorApiController {
                     fornecedor.setCnpj(fornecedorDetails.getCnpj());
                     fornecedor.setTelefone(fornecedorDetails.getTelefone());
                     fornecedor.setEndereco(fornecedorDetails.getEndereco());
-                    Fornecedor updatedFornecedor = fornecedorRepository.save(fornecedor);
-                    return ResponseEntity.ok(updatedFornecedor);
+                    return ResponseEntity.ok(fornecedorRepository.save(fornecedor));
                 })
                 .orElse(ResponseEntity.notFound().build());
     }

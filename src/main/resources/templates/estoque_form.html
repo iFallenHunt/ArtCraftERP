@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Estoque</title>
-    <link rel="stylesheet" href="/css/estoque.css">
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Adicione o caminho para o seu CSS -->
 </head>
 <body>
-<h1 th:text="${estoque.id != null ? 'Editar Estoque' : 'Novo Estoque'}"></h1>
-<form th:action="@{/web/estoque/save}" th:object="${estoque}" method="post">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" th:field="*{nome}" required>
-    <label for="quantidade">Quantidade:</label>
-    <input type="number" id="quantidade" th:field="*{quantidade}" required>
-    <button type="submit">Salvar</button>
-</form>
+<header>
+    <h1>Formulário de Estoque</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/web/clientes">Clientes</a></li>
+            <li><a href="/web/estoque">Estoques</a></li>
+            <li><a href="/web/fornecedores">Fornecedores</a></li>
+            <li><a href="/web/produtos">Produtos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Adicionar/Editar Estoque</h2>
+        <form th:action="@{/estoque/save}" th:object="${estoque}" method="post">
+            <input type="hidden" th:field="*{id}"/>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" th:field="*{nome}" required/>
+            </div>
+
+            <div>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" th:field="*{quantidade}" required/>
+            </div>
+
+            <div>
+                <label for="localizacao">Localização:</label>
+                <input type="text" id="localizacao" th:field="*{localizacao}" required/>
+            </div>
+
+            <div>
+                <button type="submit">Salvar</button>
+                <a href="/estoques">Cancelar</a>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>

@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping("/web/produtos")
@@ -27,29 +26,21 @@ public class ProdutoWebController {
     @GetMapping("/new")
     public String createProdutoForm(Model model) {
         model.addAttribute("produto", new Produto());
-        return "produtos_form";
+        return "produto_form";
     }
 
     @GetMapping("/details/{id}")
     public String viewProdutoDetails(@PathVariable Long id, Model model) {
-        Optional<Produto> produto = produtoService.findById(id);
-        if (produto.isPresent()) {
-            model.addAttribute("produto", produto.get());
-        } else {
-            model.addAttribute("error", "Produto not found");
-        }
-        return "produtos_details";
+        Produto produto = produtoService.findById(id).orElse(null);
+        model.addAttribute("produto", produto);
+        return "produto_details";
     }
 
     @GetMapping("/edit/{id}")
     public String editProdutoForm(@PathVariable Long id, Model model) {
-        Optional<Produto> produto = produtoService.findById(id);
-        if (produto.isPresent()) {
-            model.addAttribute("produto", produto.get());
-        } else {
-            model.addAttribute("error", "Produto not found");
-        }
-        return "produtos_form";
+        Produto produto = produtoService.findById(id).orElse(null);
+        model.addAttribute("produto", produto);
+        return "produto_form";
     }
 
     @PostMapping("/save")

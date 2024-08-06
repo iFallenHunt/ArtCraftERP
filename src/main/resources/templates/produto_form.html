@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Fornecedor</title>
+    <title>Formulário de Produto</title>
     <link rel="stylesheet" href="/css/styles.css"> <!-- Adicione o caminho para o seu CSS -->
 </head>
 <body>
 <header>
-    <h1>Formulário de Fornecedor</h1>
+    <h1>Formulário de Produto</h1>
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
@@ -22,8 +22,8 @@
 
 <main>
     <section>
-        <h2>Adicionar/Editar Fornecedor</h2>
-        <form th:action="@{/fornecedor/save}" th:object="${fornecedor}" method="post">
+        <h2>Adicionar/Editar Produto</h2>
+        <form th:action="@{/produto/save}" th:object="${produto}" method="post">
             <input type="hidden" th:field="*{id}"/>
 
             <div>
@@ -32,23 +32,28 @@
             </div>
 
             <div>
-                <label for="cnpj">CNPJ:</label>
-                <input type="text" id="cnpj" th:field="*{cnpj}" required/>
+                <label for="descricao">Descrição:</label>
+                <input type="text" id="descricao" th:field="*{descricao}" required/>
             </div>
 
             <div>
-                <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" th:field="*{endereco}" required/>
+                <label for="preco">Preço:</label>
+                <input type="number" id="preco" th:field="*{preco}" step="0.01" required/>
             </div>
 
             <div>
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" th:field="*{telefone}" required/>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" th:field="*{quantidade}" required/>
+            </div>
+
+            <div>
+                <label for="categoria">Categoria:</label>
+                <input type="text" id="categoria" th:field="*{categoria}" required/>
             </div>
 
             <div>
                 <button type="submit">Salvar</button>
-                <a href="/fornecedores">Cancelar</a>
+                <a href="/produtos">Cancelar</a>
             </div>
         </form>
     </section>

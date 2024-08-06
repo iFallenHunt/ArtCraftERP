@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/estoque")
+@RequestMapping("/api/estoques")
 public class EstoqueApiController {
 
     @Autowired
@@ -38,8 +38,7 @@ public class EstoqueApiController {
                 .map(estoque -> {
                     estoque.setProduto(estoqueDetails.getProduto());
                     estoque.setQuantidade(estoqueDetails.getQuantidade());
-                    Estoque updatedEstoque = estoqueRepository.save(estoque);
-                    return ResponseEntity.ok(updatedEstoque);
+                    return ResponseEntity.ok(estoqueRepository.save(estoque));
                 })
                 .orElse(ResponseEntity.notFound().build());
     }

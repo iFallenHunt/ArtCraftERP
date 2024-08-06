@@ -40,8 +40,7 @@ public class ProdutoApiController {
                     produto.setDescricao(produtoDetails.getDescricao());
                     produto.setPreco(produtoDetails.getPreco());
                     produto.setQuantidade(produtoDetails.getQuantidade());
-                    Produto updatedProduto = produtoRepository.save(produto);
-                    return ResponseEntity.ok(updatedProduto);
+                    return ResponseEntity.ok(produtoRepository.save(produto));
                 })
                 .orElse(ResponseEntity.notFound().build());
     }
