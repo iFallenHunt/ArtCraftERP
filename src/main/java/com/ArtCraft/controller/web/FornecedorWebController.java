@@ -20,27 +20,27 @@ public class FornecedorWebController {
     public String getAllFornecedores(Model model) {
         List<Fornecedor> fornecedores = fornecedorService.findAll();
         model.addAttribute("fornecedores", fornecedores);
-        return "fornecedores";
+        return "fornecedor/fornecedores";
     }
 
     @GetMapping("/new")
     public String createFornecedorForm(Model model) {
         model.addAttribute("fornecedor", new Fornecedor());
-        return "fornecedor_form";
+        return "fornecedor/fornecedor_form";
     }
 
     @GetMapping("/details/{id}")
     public String viewFornecedorDetails(@PathVariable Long id, Model model) {
         Fornecedor fornecedor = fornecedorService.findById(id).orElse(null);
         model.addAttribute("fornecedor", fornecedor);
-        return "fornecedor_details";
+        return "fornecedor/fornecedor_details";
     }
 
     @GetMapping("/edit/{id}")
     public String editFornecedorForm(@PathVariable Long id, Model model) {
         Fornecedor fornecedor = fornecedorService.findById(id).orElse(null);
         model.addAttribute("fornecedor", fornecedor);
-        return "fornecedor_form";
+        return "fornecedor/fornecedor_form";
     }
 
     @PostMapping("/save")

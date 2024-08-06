@@ -20,27 +20,27 @@ public class ProdutoWebController {
     public String getAllProdutos(Model model) {
         List<Produto> produtos = produtoService.findAll();
         model.addAttribute("produtos", produtos);
-        return "produtos";
+        return "produtos/produtos";
     }
 
     @GetMapping("/new")
     public String createProdutoForm(Model model) {
         model.addAttribute("produto", new Produto());
-        return "produto_form";
+        return "produtos/produto_form";
     }
 
     @GetMapping("/details/{id}")
     public String viewProdutoDetails(@PathVariable Long id, Model model) {
         Produto produto = produtoService.findById(id).orElse(null);
         model.addAttribute("produto", produto);
-        return "produto_details";
+        return "produtos/produto_details";
     }
 
     @GetMapping("/edit/{id}")
     public String editProdutoForm(@PathVariable Long id, Model model) {
         Produto produto = produtoService.findById(id).orElse(null);
         model.addAttribute("produto", produto);
-        return "produto_form";
+        return "produtos/produto_form";
     }
 
     @PostMapping("/save")

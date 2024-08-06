@@ -20,27 +20,27 @@ public class ClienteWebController {
     public String getAllClientes(Model model, @RequestParam(required = false) String name) {
         List<Cliente> clientes = (name != null && !name.isEmpty()) ? clienteService.findByName(name) : clienteService.findAll();
         model.addAttribute("clientes", clientes);
-        return "clientes";
+        return "cliente/clientes";
     }
 
     @GetMapping("/new")
     public String createClienteForm(Model model) {
         model.addAttribute("cliente", new Cliente());
-        return "clientes_form";
+        return "cliente/clientes_form";
     }
 
     @GetMapping("/details/{id}")
     public String viewClienteDetails(@PathVariable Long id, Model model) {
         Cliente cliente = clienteService.findById(id).orElse(null);
         model.addAttribute("cliente", cliente);
-        return "cliente_details";
+        return "cliente/cliente_details";
     }
 
     @GetMapping("/edit/{id}")
     public String editClienteForm(@PathVariable Long id, Model model) {
         Cliente cliente = clienteService.findById(id).orElse(null);
         model.addAttribute("cliente", cliente);
-        return "clientes_form";
+        return "cliente/clientes_form";
     }
 
     @PostMapping("/save")

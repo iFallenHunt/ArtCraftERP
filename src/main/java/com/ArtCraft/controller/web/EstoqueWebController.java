@@ -20,27 +20,27 @@ public class EstoqueWebController {
     public String getAllEstoque(Model model) {
         List<Estoque> estoque = estoqueService.findAll();
         model.addAttribute("estoque", estoque);
-        return "estoque";
+        return "estoque/estoque";
     }
 
     @GetMapping("/new")
     public String createEstoqueForm(Model model) {
         model.addAttribute("estoque", new Estoque());
-        return "estoque_form";
+        return "estoque/estoque_form";
     }
 
     @GetMapping("/details/{id}")
     public String viewEstoqueDetails(@PathVariable Long id, Model model) {
         Estoque estoque = estoqueService.findById(id).orElse(null);
         model.addAttribute("estoque", estoque);
-        return "estoque_details";
+        return "estoque/estoque_details";
     }
 
     @GetMapping("/edit/{id}")
     public String editEstoqueForm(@PathVariable Long id, Model model) {
         Estoque estoque = estoqueService.findById(id).orElse(null);
         model.addAttribute("estoque", estoque);
-        return "estoque_form";
+        return "estoque/estoque_form";
     }
 
     @PostMapping("/save")

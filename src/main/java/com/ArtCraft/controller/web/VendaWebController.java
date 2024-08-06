@@ -30,7 +30,7 @@ public class VendaWebController {
     public String listVendas(Model model) {
         List<Venda> vendas = vendaService.findAll();
         model.addAttribute("vendas", vendas);
-        return "list"; // Corrigido para refletir a estrutura atual
+        return "vendas/list"; // Corrigido para refletir a estrutura atual
     }
 
     @GetMapping("/new")
@@ -41,7 +41,7 @@ public class VendaWebController {
         model.addAttribute("venda", venda);
         model.addAttribute("clientes", clientes);
         model.addAttribute("produtos", produtos);
-        return "vendas_form"; // Corrigido para refletir a estrutura atual
+        return "vendas/vendas_form"; // Corrigido para refletir a estrutura atual
     }
 
     @PostMapping
@@ -58,7 +58,7 @@ public class VendaWebController {
         model.addAttribute("venda", venda);
         model.addAttribute("clientes", clientes);
         model.addAttribute("produtos", produtos);
-        return "vendas_form"; // Corrigido para refletir a estrutura atual
+        return "vendas/vendas_form"; // Corrigido para refletir a estrutura atual
     }
 
     @DeleteMapping("/{id}")

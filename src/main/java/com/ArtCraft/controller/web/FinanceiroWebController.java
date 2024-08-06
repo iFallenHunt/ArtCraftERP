@@ -8,6 +8,6 @@ public class FinanceiroWebController {
 
     @GetMapping("/web/financeiro")
     public String showFinanceiroPage() {
-        return "financeiro"; // Certifique-se de que o nome do arquivo é "financeiro.html"
+        return "financeiro/financeiro"; // Certifique-se de que o nome do arquivo é "financeiro.html"
     }
 }
