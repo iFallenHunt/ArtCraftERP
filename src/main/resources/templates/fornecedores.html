@@ -1,29 +1,35 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fornecedores</title>
-    <link rel="stylesheet" href="/css/fornecedor.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <script src="/js/jquery-3.6.0.min.js" defer></script>
 </head>
 <body>
-<header>
-    <h1>Fornecedores</h1>
-    <a class="button back-to-home" href="/">Voltar para a Tela Inicial</a>
-    <a class="button view-all" href="/web/fornecedores/new">Novo Fornecedor</a>
-</header>
-<div class="container">
-    <div class="content">
-        <div class="fornecedor-item" th:each="fornecedor : ${fornecedores}">
-            <img src="fornecedor-image.jpg" alt="Fornecedor Image">
-            <div class="info">
-                <h2 th:text="${fornecedor.nome}"></h2>
-                <p th:text="${fornecedor.email}"></p>
-                <a th:href="@{/web/fornecedores/details/{id}(id=${fornecedor.id})}">Detalhes</a>
-            </div>
-        </div>
-    </div>
+<div class="sidebar">
+    <h2>ArtCraftERP</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/web/clientes">Clientes</a></li>
+        <li><a href="/web/estoque">Estoques</a></li>
+        <li><a href="/web/fornecedores">Fornecedores</a></li>
+        <li><a href="/web/produtos">Produtos</a></li>
+        <li><a href="/web/vendas">Vendas</a></li>
+        <li><a href="/web/financeiro">Financeiro</a></li>
+    </ul>
 </div>
-<script src="/js/script.js" defer></script>
+
+<div class="main-content">
+    <h1>Fornecedores</h1>
+    <section>
+        <h2>Lista de Fornecedores</h2>
+        <p>Aqui você verá a lista de fornecedores.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>

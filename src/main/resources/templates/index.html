@@ -3,29 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
-    <link rel="stylesheet" href="/css/styles.css"> <!-- Adicione o caminho para o seu CSS -->
+    <title>Tela Inicial</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-<header>
-    <h1>Clientes</h1>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="web/clientes">Clientes</a></li>
-            <li><a href="/web/estoque">Estoques</a></li>
-            <li><a href="web/fornecedores">Fornecedores</a></li>
-            <li><a href="web/produtos">Produtos</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="sidebar">
+    <h2>ArtCraftERP</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/web/clientes">Clientes</a></li>
+        <li><a href="/web/estoque">Estoques</a></li>
+        <li><a href="/web/fornecedores">Fornecedores</a></li>
+        <li><a href="/web/produtos">Produtos</a></li>
+        <li><a href="/web/vendas">Vendas</a></li>
+        <li><a href="/web/financeiro">Financeiro</a></li>
+    </ul>
+</div>
 
-<main>
-    <section>
-        <h2>Lista de Clientes</h2>
-        <p>Aqui você verá a lista de clientes.</p>
-    </section>
-</main>
+<div class="main-content">
+    <h1>Home</h1>
+    <div class="dashboard">
+        <section class="sales">
+            <h2>Últimas Vendas Realizadas</h2>
+            <ul>
+                <li>Venda 1: Cliente A - R$ 100,00</li>
+                <li>Venda 2: Cliente B - R$ 200,00</li>
+                <li>Venda 3: Cliente C - R$ 150,00</li>
+                <!-- Adicione mais vendas conforme necessário -->
+            </ul>
+        </section>
+        <section class="financial-balance">
+            <h2>Balanço Financeiro</h2>
+            <p>Total de Receitas: R$ 1000,00</p>
+            <p>Total de Despesas: R$ 500,00</p>
+            <p>Saldo: R$ 500,00</p>
+            <!-- Adicione mais detalhes financeiros conforme necessário -->
+        </section>
+    </div>
+</div>
 
 <footer>
     <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>

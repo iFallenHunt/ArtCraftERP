@@ -3,58 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de Clientes</title>
-    <link rel="stylesheet" href="/css/styles.css"> <!-- Adicione o caminho para o seu CSS -->
+    <title>Clientes</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-<header>
-    <h1>Listagem de Clientes</h1>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/web/clientes">Clientes</a></li>
-            <li><a href="/web/estoque">Estoques</a></li>
-            <li><a href="/web/fornecedores">Fornecedores</a></li>
-            <li><a href="/web/produtos">Produtos</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="sidebar">
+    <h2>ArtCraftERP</h2>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/web/clientes">Clientes</a></li>
+        <li><a href="/web/estoque">Estoques</a></li>
+        <li><a href="/web/fornecedores">Fornecedores</a></li>
+        <li><a href="/web/produtos">Produtos</a></li>
+        <li><a href="/web/vendas">Vendas</a></li>
+        <li><a href="/web/financeiro">Financeiro</a></li>
+    </ul>
+</div>
 
-<main>
+<div class="main-content">
+    <h1>Clientes</h1>
     <section>
-        <h2>Clientes</h2>
-        <a href="/web/clientes/new" class="button">Adicionar Novo Cliente</a>
-        <table>
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Telefone</th>
-                <th>Endereço</th>
-                <th>Data de Nascimento</th>
-                <th>Ações</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="cliente : ${clientes}">
-                <td th:text="${cliente.id}"></td>
-                <td th:text="${cliente.nome}"></td>
-                <td th:text="${cliente.email}"></td>
-                <td th:text="${cliente.telefone}"></td>
-                <td th:text="${cliente.endereco}"></td>
-                <td th:text="${#dates.format(cliente.dataNascimento, 'dd/MM/yyyy')}"></td>
-                <td>
-                    <a th:href="@{/web/clientes/details/{id}(id=${cliente.id})}">Detalhes</a>
-                    <a th:href="@{/web/clientes/edit/{id}(id=${cliente.id})}">Editar</a>
-                    <a th:href="@{/web/clientes/delete/{id}(id=${cliente.id})}"
-                       onclick="return confirm('Tem certeza que deseja excluir este cliente?')">Excluir</a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <h2>Lista de Clientes</h2>
+        <p>Aqui você verá a lista de clientes.</p>
     </section>
-</main>
+</div>
 
 <footer>
     <p>&copy; 2024 Sistema de Gestão. Todos os direitos reservados.</p>
