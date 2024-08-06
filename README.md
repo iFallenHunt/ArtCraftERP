@@ -16,11 +16,18 @@ mim, e sim para ela.
 ```
 src/main/java/com/ArtCraft
 ├── controller
-│   ├── ClienteController.java
-│   ├── EstoqueController.java
-│   ├── FornecedorController.java
-│   └── ProdutoController.java
-├── exceptions (vazia ainda)
+│   ├── api
+│   │   ├── ClienteApiController.java
+│   │   ├── EstoqueApiController.java
+│   │   ├── FornecedorApiController.java
+│   │   └── ProdutoApiController.java
+│   └── web
+│       ├── ClienteWebController.java
+│       ├── EstoqueWebController.java
+│       ├── FornecedorWebController.java
+│       └── ProdutoWebController.java
+├── exceptions
+│   └── (vazia ainda)
 ├── model
 │   ├── Cliente.java
 │   ├── Estoque.java
@@ -31,29 +38,39 @@ src/main/java/com/ArtCraft
 │   ├── EstoqueRepository.java
 │   ├── FornecedorRepository.java
 │   └── ProdutoRepository.java
-├── service (vazia ainda)
+├── service
+│   └── (vazia ainda)
 src/main/resources/static
 ├── css
-│   └── botao_financeiro.css
-│   └── botao_upper.css
-│   └── cliente.css
-│   └── efeito_hover.css
-│   └── efeito_pressed.css
-│   └── fornecedor.css
-│   └── hand.css
-│   └── MainView.css
+│   ├── botao_financeiro.css
+│   ├── botao_upper.css
+│   ├── cliente.css
+│   ├── efeito_hover.css
+│   ├── efeito_pressed.css
+│   ├── fornecedor.css
+│   ├── hand.css
+│   ├── MainView.css
 │   └── vier_all.css
-├── img (vazia ainda)
+├── img
+│   └── (vazia ainda)
 ├── js
-│   └── jquery-3.6.0.min.js
+│   ├── jquery-3.6.0.min.js
 │   └── script.js
 src/main/resources
 ├── templates
-│   └── cliente.html
-│   └── estoque.html
-│   └── financeiro.html
-│   └── fornecedor.html
-│   └── index.html
+│   ├── cliente_detail
+│   ├── clientes.html
+│   ├── clientes_form.html
+│   ├── estoque.html
+│   ├── estoque_detail.html
+│   ├── estoque_form.html
+│   ├── fornecedor_detail.html
+│   ├── fornecedor_form.html
+│   ├── fornecedores.html
+│   ├── index.html
+│   ├── main_view.html
+│   ├── produto_detail.html
+│   ├── produto_form.html
 │   └── produtos.html
 ```
 
@@ -62,10 +79,14 @@ src/main/resources
 ### Backend
 
 - **Controllers**
-    - `ClienteController`: Adiciona, edita, exclui e lista clientes.
-    - `EstoqueController`: Adiciona, edita, exclui e lista estoques.
-    - `FornecedorController`: Adiciona, edita, exclui e lista fornecedores.
-    - `ProdutoController`: Adiciona, edita, exclui e lista produtos.
+    - `ClienteApiController`: Gerencia operações CRUD para clientes via API REST.
+    - `EstoqueApiController`: Gerencia operações CRUD para estoques via API REST.
+    - `FornecedorApiController`: Gerencia operações CRUD para fornecedores via API REST.
+    - `ProdutoApiController`: Gerencia operações CRUD para produtos via API REST.
+    - `ClienteWebController`: Gerencia operações CRUD e visualização para clientes via interface web.
+    - `EstoqueWebController`: Gerencia operações CRUD e visualização para estoques via interface web.
+    - `FornecedorWebController`: Gerencia operações CRUD e visualização para fornecedores via interface web.
+    - `ProdutoWebController`: Gerencia operações CRUD e visualização para produtos via interface web.
 
 - **Models**
     - `Cliente`: Inclui atributos como `id`, `nome`, `email`, `telefone`, `endereco` e `dataNascimento`.
@@ -85,7 +106,8 @@ src/main/resources
 ### Frontend
 
 - Estrutura básica com CSS e JS configurados.
-- Templates HTML para exibição e interação com os dados.
+- Templates HTML para exibição e interação com os dados, incluindo páginas para clientes, fornecedores, produtos e
+  estoques.
 
 ## Futuras Implementações
 
@@ -106,8 +128,8 @@ src/main/resources
     - Refatoração de métodos para melhorar a eficiência e a legibilidade do código.
 
 5. **Adição de Funcionalidades:**
-    - Implementação de novos recursos conforme necessário, como financeiro, relatórios financeiros, funcionalidades avançadas de
-      gerenciamento de estoque e integrações com outros sistemas.
+    - Implementação de novos recursos conforme necessário, como financeiro, relatórios financeiros, funcionalidades
+      avançadas de gerenciamento de estoque e integrações com outros sistemas.
     - Melhoria na segurança da aplicação, incluindo autenticação e autorização de usuários.
 
 ## Diagrama de Classe
@@ -145,39 +167,11 @@ classDiagram
         +Integer quantidade
     }
 
-    Cliente --|> Repository
-    Estoque --|> Repository
-    Fornecedor --|> Repository
-    Produto --|> Repository
-
     Cliente --> ClienteRepository
     Estoque --> EstoqueRepository
     Fornecedor --> FornecedorRepository
     Produto --> ProdutoRepository
 ```
-
-## Como Executar o Projeto
-
-1. **Clone o Repositório:**
-
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   ```
-
-2. **Navegue até o Diretório do Projeto:**
-
-   ```bash
-   cd ArtCraft
-   ```
-
-3. **Compile e Execute a Aplicação:**
-
-   ```bash
-   ./mvnw spring-boot:run
-   ```
-
-4. **Acesse a API:**
-    - A API estará disponível em `http://localhost:8080/api`.
 
 ## Licença
 
