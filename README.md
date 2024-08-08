@@ -1,3 +1,5 @@
+[🇺🇸](README-EN.md)
+
 # Projeto ArtCraft
 
 ## Descrição
